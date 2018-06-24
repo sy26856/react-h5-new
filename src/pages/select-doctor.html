@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include file="/mods/head/index.html"  data='{"spmb":"1003"}' -->
+    <title>选择医生</title>
+    <link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+    <style type="text/css">
+        .ui-list > li a{
+            display:box;
+            display: -webkit-box;
+            color:#000;
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-sections">
+        <div class="page wait"  id="J_Page">
+            <div id="J_DoctorList">
+                <section class="ui-notice" >
+                    <i></i>
+                    <p>科室暂时没有排班医生</p>
+                </section>
+            </div>  
+           
+        </div>
+        
+    </div>
+
+
+    <!--#include file="/mods/head/footer.html"-->
+    
+    <script>
+        seajs.use("pages/select-doctor", function(){
+            seajs.use("libs/fastclick"); 
+        });
+    </script>
+</body>
+</html>

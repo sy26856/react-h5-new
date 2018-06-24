@@ -1,0 +1,43 @@
+[{
+    "isNeedLogin": false,
+    "subTitle": "线上快捷挂号",
+    "icon": "http://s.yuantutech.com/i4/dd5af8b9d942023defd8a7d1f0ab506a-69-68.png",
+    "href": "reg-type.html",
+    "title": "预约挂号"
+}, {
+    "isNeedLogin": true,
+    "subTitle": "查看预约信息",
+    "icon": "http://s.yuantutech.com/i4/be0d2062cf0c2608ed6f0f6490ac1332-69-68.png",
+    "href": "my-reservation.html",
+    "title": "我的预约"
+}, {
+    "isNeedLogin": true,
+    "subTitle": "所需费用缴纳",
+    "icon": "http://s.yuantutech.com/i4/b0733a602e5e8542b4c6c6d2dde04e04-69-68.png",
+    "href": "pay-list.html",
+    "title": "便捷缴费"
+}, {
+    "isNeedLogin": true,
+    "subTitle": "相关报告查询",
+    "icon": "http://s.yuantutech.com/i4/85cfa29854f88dc129b43837c1f3689d-69-68.png",
+    "href": "report.html",
+    "title": "检查报告"
+}, {
+    "isNeedLogin": true,
+    "subTitle": "为支付做准备",
+    "icon": "http://s.yuantutech.com/i4/b2819d0130f5c0a54474bafe2616adef-69-68.png",
+    "href": null,
+    "title": "账户充值"
+}, {
+    "isNeedLogin": true,
+    "subTitle": "医院位置导航",
+    "icon": "http://s.yuantutech.com/i4/70dc9e3dbf26119eb8bfab088c9a16a2-69-68.png",
+    "href": null,
+    "title": "医院导航"
+}, {
+    "isNeedLogin": true,
+    "subTitle": "查询每日清单",
+    "icon": "http://s.yuantutech.com/i4/c7a32f452c6f5c46064d93d644947118-69-68.png",
+    "href": "hospitalize/records.html",
+    "title": "住院清单"
+}]

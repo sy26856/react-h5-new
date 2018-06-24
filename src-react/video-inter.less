@@ -1,0 +1,137 @@
+.video-content{
+    margin-bottom:50px;
+    overflow:auto;
+}
+.video-sel{
+    height:50px;
+    margin-top: 10px;
+    background:#fff;
+    display:flex;
+    width:100%;
+    padding:15px 0;
+    box-sizing: border-box;
+    .video-sel-line{
+        width:1px;
+        height:30px;
+        background:#eee;
+        position: absolute;
+        top:50%;left:50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+.video-queue-empty{
+    height:100%;
+    background:#fff;
+    overflow:hidden;
+    img{
+        width:30%;
+        display:block;
+        margin:50px auto 20px;
+    }
+    .video-queue-txt{
+        text-align: center;
+        font-size:14px;
+        color:#999;
+        margin-bottom:50px;
+    }
+}
+.video-sel-item{
+    width:100%;
+    box-sizing: border-box;
+    padding-left: 15px;
+    box-sizing: border-box;
+    color:#666;
+    font-size:15px;
+    line-height:20px;
+    .video-sel-img img:before{
+        content: 'span';
+        display:inline-block;
+        vertical-align: middle;
+    }
+    .video-sel-img img{
+        width:8px;
+        height:5px;
+        margin-left:7px;
+        vertical-align: middle;
+        transform: rotateX(180deg)
+    }
+}
+.video-item-action{
+    color:#429fff;
+}
+.video-tip{
+    width:100%;
+    background:#fff;
+    display:flex;
+    padding:25px 50px;
+    box-sizing: border-box;
+    justify-content: center;
+   img{
+       width:100%;
+       height:25%;
+   }
+}
+.video-queue{
+    background:#fff;
+    .video-queue-date{
+        line-height:40px;
+        background:#f0f0f0;
+        font-size:14px;
+        color:#999;
+        padding:0 15px;
+    }
+}
+.txt-arrowlink.list-link-wrapper:before{
+    content:'\e63a'
+}
+.list-queue{
+    font-size:16px;
+}
+.list-item-pos{
+    position:relative;
+    height:90px;
+    .list-item-more{
+        width: 36px;
+        height:18px;
+        text-align: center;
+        background: url(https://front-images.oss-cn-hangzhou.aliyuncs.com/i4/43a956209f7a18dab16b20caba073988-108-54.png) no-repeat center/cover;
+        font-size: 10px;
+        line-height: 18px;
+        color: #999;
+        position:absolute;
+        top:0px;
+        right:15px;
+    }
+    .list-item-abs{
+        width: 36px;
+        height:18px;
+        text-align: center;
+        background: url(https://front-images.oss-cn-hangzhou.aliyuncs.com/i4/32a69ea998d79c2b1f311a35c13c06c9-108-54.png) no-repeat center/cover;
+        font-size: 10px;
+        line-height: 18px;
+        color: #fff;
+        position:absolute;
+        top:0px;
+        right:15px;
+    }
+}
+.list-queue-name{
+    font-size:12px;
+    color:#666;
+    margin-left:6px;
+}
+.list-small-name{
+    font-size:14px;
+    color:#666;
+    line-height:30px;
+}
+.list-money{
+    font-size:14px;
+    color:#ff5256;
+}
+.list-icon-sex{
+    width:58px;
+    height:auto;
+    margin-right:12px;
+    border-radius: 29px;
+}

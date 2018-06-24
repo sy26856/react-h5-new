@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--#include file="/mods/head/index.html"  data='{"spmb":"1704"}' -->
+    <title>网络诊间</title>
+	<link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+   	<link rel="stylesheet" type="text/css" href="./network-clinic.less.css">
+</head>
+<body>
+
+
+	<div class="page-index page" id="J_Page">
+		<div class="line-up">
+			<div class="line-ing" id="J_WaitInfo">
+			</div>
+		</div>	
+		<div class="opt">
+			<a class="voide-btn-test" id="J_VoideTest">音视频测试</a>
+			<div class="ui-tips center">建议在WIFI/4G等网络状态良好下进行视频</div>
+		</div>
+		<div class="tips-line">
+			<span class="line-left"></span>
+			网路小贴士
+			<span class="line-right"></span>
+		</div>
+		<div class="ui-tips center">等待期间可进行视频测试，调整好您的设备<br/>预约问诊时间前2小时可以看到排队信息</div>
+	</div>
+
+
+	<!--#include file="/mods/head/footer.html"-->
+	<script>
+		seajs.use("pages/network-clinic", function(){
+			seajs.use("libs/fastclick"); 
+        });
+	</script>
+</body>
+</html>

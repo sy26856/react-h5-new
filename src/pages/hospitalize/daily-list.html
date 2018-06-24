@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include file="/mods/head/index.html"-->
+    <title>日清单列表</title>
+    <link rel="stylesheet" type="text/css" href="../../component/frozen.less.css">
+    <link rel="stylesheet" href="daily-list.less">
+</head>
+<body>
+<div class="inpatient ui-border-b">
+    <div class="inpatient-icon"
+         style="background-image:url(//s.yuantutech.com/i4/47f8f9bb6c859be98888b0b13c20364a-92-92.png);"></div>
+    <div class="inpatient-info" id="J_Inpatient">
+        <div class="inpatient-name">
+            <em id="inpatient-name"></em>
+            <!--<a class="inpatient-choice" href="../patient-list.html?saveKey=zhuyuan-cache&selectView=1&target=_blank">切换就诊人</a>-->
+        </div>
+        <div class="inpatient-idNo" id="inpatient-idNo"></div>
+    </div>
+</div>
+<div class="hospitalize-item ui-border-tb">
+    <div class="hospitalize-title">
+        <!--<em class="column">入院日期:</em><em id="hospitalize-title"></em>-->
+        <!--<div class="hospitalize-status" id="hospitalize-status"></div>-->
+        <!--</div>-->
+        <!--<div class="hospitalize-body ">-->
+        <!--<div class="hospital-name" id="hospital-name"></div>-->
+        <div class="row">
+            <em class="col-black">入院日期:&nbsp;</em><em class="col-black" id="hos-date"></em>
+            <em class="hospitalize-status" id="hospitalize-status"></em>
+        </div>
+        <div class="ui-border-t" style="height: 1px"></div>
+        <div class="row">
+            <em class="column">医院名称:</em><em class="col-black" id="hos-name"></em>
+        </div>
+        <div class="row">
+            <em class="column">科室:</em><em class="col-black" id="hos-dept"></em>
+        </div>
+        <div class="row">
+            <em class="column">住院号: </em><em class="col-black" id="hos-no"></em>
+        </div>
+        <div class="row">
+            <em class="column">病区: </em><em class="col-black" id="area"></em>
+        </div>
+        <div class="row">
+            <em class="column">床位: </em><em class="col-black" id="bed-no"></em>
+        </div>
+        <div class="row">
+            <em class="column">费用合计: </em><em class="cost-sum" id="cost-sum">0.00元</em>
+        </div>
+    </div>
+</div>
+<div class="line-span">
+    <div class="ui-border line"></div>
+    <div class="line-info">日清单列表</div>
+</div>
+<div class="page wait" id="J_Page">
+    <div class="daily-list" id="J_List">
+
+        <div style="height: 200px;">
+            <div class="ui-notice">
+                <i></i>
+
+                <p>没有日清单</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--#include file="/mods/head/footer.html"-->
+
+<script>
+    seajs.use("pages/hospitalize/daily-list", function () {
+        seajs.use("libs/fastclick");
+    });
+</script>
+</body>
+</html>

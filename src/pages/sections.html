@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include file="/mods/head/index.html"  data='{"spmb":"1003"}' -->
+    <title>选择科室</title>
+    <link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+    <link rel="stylesheet" type="text/css" href="../mods/page-top-tip/index.less.css">
+
+    <style type="text/css">
+        .page-sections .ui-searchbar-wrap{
+            width: 100%;
+            z-index:10;
+        }
+        .page-sections .ui-list h4 span{
+            color:#999;
+            text-transform: uppercase;
+            font-size:80%;
+        }
+        .ui-border-t a{
+            display: block;
+            width:100%;
+            color:#333;
+        }
+
+        .page-sections .tips{
+            text-align: center;
+        }
+
+
+    </style>
+
+    <script>
+      window.location.href = window.location.href.replace('/pages', '')
+    </script>
+
+</head>
+<body>
+<div class="page-sections">
+    <div class="ui-searchbar-wrap ui-border-b">
+        <div class="ui-searchbar ui-border-radius">
+            <i class="ui-icon-search"></i>
+            <div class="ui-searchbar-text">搜索科室，支持中文/拼音/首字母检索</div>
+            <div class="ui-searchbar-input">
+                <input value="" type="text" placeholder="搜索科室" maxlength="10" id="J_SearchInput" autocapitalize="off">
+            </div>
+            <i class="ui-icon-close" id="J_SearchClear"></i>
+        </div>
+        <button class="ui-searchbar-cancel">取消</button>
+    </div>
+    <div id="J_SectionTip">
+
+    </div>
+    <div class="page"  id="J_Page">
+    </div>
+
+</div>
+
+
+<!--#include file="/mods/head/footer.html"-->
+
+<script>
+  seajs.use("pages/sections", function(){
+    seajs.use("libs/fastclick");
+  });
+</script>
+</body>
+</html>

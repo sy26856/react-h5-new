@@ -1,0 +1,76 @@
+.fill-info {
+    font-family: PingFangSC-Medium;
+
+    .checkedSty {
+        width:20px;
+        height:20px;
+        border-radius:50%;
+        border:1px solid #a7a6a6;
+        box-sizing:border-box;
+        position:absolute;
+        top:50%;
+        transform:translateY(-50%);
+        left:0;
+    }
+
+    .selectedKey {
+        background: url('./images/report-doc/check.png');
+        background-size: 100%;
+        border: none;
+    }
+
+    .list-left {
+        float: left;
+        width: 120px;
+        height: 100%;
+        line-height: 26px;
+    }
+
+    .list-border {
+        width: 68px;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        font-size: 12px;
+        color: #429fff;
+        border: solid 1px #429fff;
+        border-radius: 3px;
+        margin-left: 10px;
+        float: right;
+    }
+
+    .list-back {
+        background: #429fff;
+        color: #fff;
+    }
+
+    .ul_data {
+        max-height: 80%;
+        overflow-y: scroll;
+        padding: 10px 0;
+        -webkit-overflow-scrolling: touch;
+        box-sizing: border-box;
+
+        li {
+            font-size: 14px;
+            color:#999;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            color: #333;
+            padding-left: 15px;
+        }
+    }
+
+    .search_cancel {
+        text-align: center;
+        color: #429fff;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #btn_disabled {
+        background-color: #cccccc!important;
+    }
+}

@@ -1,0 +1,99 @@
+.tab-nav {
+  text-align: center;
+  height: 48px;
+  border-bottom: 1px solid #dcdcdc;
+  background-color: #fff;
+  position: relative;
+  z-index: 1000;
+  .tab-nav-in {
+    position: relative;
+    white-space: nowrap;
+    margin: 0 6px;
+    font-size: 0;
+    overflow: hidden;
+    height: 60px;
+  }
+  ul {
+    display: -webkit-box;
+  }
+  li {
+    display: block;
+    -webkit-box-flex: 1;
+    cursor: pointer;
+  }
+  .on a {
+    color: #45a7ff;
+  }
+  li a {
+    font-size: 16px;
+    line-height: 3em;
+    display: block;
+    color: #888;
+    text-decoration: none;
+  }
+}
+.nav-roll-bar {
+  height: 3px;
+  width: 0;
+  background-color: #45a7ff;
+  position: relative;
+  display: block;
+  left: 0px;
+  padding: 0;
+  margin-top: -3px;
+  z-index: 10;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  &.tab-index-0 {
+    width: 50%;
+  }
+  &.tab-index-1 {
+    width: 50%;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+.content {
+  .every-month {
+    margin-top: 20px;
+  }
+  .month-title {
+    min-height: 60px;
+    color: #55d0ff;
+    line-height: 60px;
+    padding-left: 15px;
+    background-color: #fff;
+  }
+  .notice {
+    span {
+      width: 40px;
+      height: 40px;
+    }
+    h3 {
+      margin: 5px 0;
+    }
+  }
+}
+
+.report-list-title {
+  background-color: #FEFAD8;
+  color: #FD940B;
+  font-size: 14px;
+  padding: 10px 15px;
+  word-break: break-all;
+  margin-bottom: 10px;
+}
+
+.not-read {
+  position: absolute;
+  top: 13px;
+  left: 30px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: #f7657d;
+}

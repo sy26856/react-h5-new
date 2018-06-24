@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include file="/mods/head/index.html"  data='{"spmb":"1531"}' -->
+    <title>重设密码</title>
+    <link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+    <link rel="stylesheet" type="text/css" href="./info-confirm.less.css">
+    <style type="text/css">
+
+        .page-forget-pwd{
+            padding-top:20px;
+        }
+
+        .page-forget-pwd .ui-form-item-r input{
+            padding-left:60px !important;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="page-forget-pwd">
+
+        <div class="ui-form ui-border-tb" >
+        
+        <div class="ui-form-item ui-form-item-show  ui-border-b">
+                <label for="J_Pwd">新密码:</label>
+                <input type="password" value="" id="J_Pwd" placeholder="请输入新密码">
+            </div>
+
+            <div class="ui-form-item ui-form-item-show  ui-border-b">
+                <label for="J_Pwd">确认密码:</label>
+                <input type="password" value="" id="J_Pwd2" placeholder="再次输入新密码">
+            </div>
+        </div>
+
+        <div class="ui-btn-wrap">
+            <button class="ui-btn-lg ui-btn-primary" id="J_Submit">
+                重新设置密码
+            </button>
+        </div>
+
+    </div>
+    <!--#include file="/mods/head/footer.html"-->
+
+    
+    <script >
+        seajs.use("pages/forget-pwd-2", function(){
+            seajs.use("libs/fastclick"); 
+        });
+    </script>
+
+</body>
+</html>

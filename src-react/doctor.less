@@ -1,0 +1,113 @@
+.doctor {
+  .star-wrapper {
+    margin-top: 6px;
+  }
+  .star-item, .star-light, .star-half-light {
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    color: #FFF;
+    margin-right: 4px;
+    display: inline-block;
+    position: relative;
+
+    background: no-repeat url('https://front-images.oss-cn-hangzhou.aliyuncs.com/i4/a99b29afff21ed78af55cb7dc2d0747b-32-28.png');
+    background-size: 100%;
+    background-position: center;
+  }
+  .star-light {
+    
+    background: no-repeat url('https://front-images.oss-cn-hangzhou.aliyuncs.com/i4/8cfdd701d6bef75ad0f9e91815f8613c-30-28.png');
+    background-size: 100%;
+    background-position: center;
+  }
+  .star-half-light {
+
+    background: no-repeat url('https://front-images.oss-cn-hangzhou.aliyuncs.com/i4/021c9ff141e7cf28019e46d2b1a1d23d-32-28.png');
+    background-size: 100%;
+    background-position: center;
+  }
+  .star-text {
+    line-height: 14px;
+    font-size: 14px;
+    color: #FDCB24;
+  }
+  .schedule-title {
+    position: relative;
+    color: #333;
+    &::before {
+      content: '详情';
+      position: absolute;
+      right: 36px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 14px;
+      color: #999999;
+      line-height: 14px;
+    }
+    &.active::before {
+      display: none;
+    }
+    &:after {
+      content: "\e63a";
+      font-family: pirosicon !important;
+      font-size: 20px;
+      width: 15px;
+      color: #ccc;
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transition: .5s;
+      transform: translateY(-50%) rotate(90deg);
+    }
+    &.active:after {
+      transform: translateY(-50%) rotate(-90deg);
+    }
+  }
+  .listen-doct-article {
+    .list-link-wrapper {
+      font-size: 15px;
+    }
+  }
+  .listen-doct-see-more {
+    height: 36px;
+    text-align: center;
+    span{
+      cursor: pointer;
+      font-size: 12px;
+      color: #999;
+      line-height: 36px;
+    }
+  }  
+  .schedule-content {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+  .img-link-wrapper {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+    > img {
+      width: 100%;
+      max-height: 200px;
+    }
+  }
+  .panel a.img-link-wrapper:last-child {
+    margin: 0;
+  }
+
+  .main-footer {
+    font-size: 12px;
+    line-height: 56px;
+  }
+
+  .consultation-title {
+    padding-left: 30px;
+    background: no-repeat url('https://front-images.oss-cn-hangzhou.aliyuncs.com/i4/1a6d518e7217cf26b9ddf1614ca56297-50-44.png');
+    background-size: 25px 22px;
+    background-position-y: center;
+  }
+}

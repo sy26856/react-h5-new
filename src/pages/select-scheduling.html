@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include file="/mods/head/index.html"  data='{"spmb":"1004"}' -->
+    <title>选择时间</title>
+    <link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+
+    <style type="text/css">
+
+        .page-select-doctor .ui-form{
+            margin:10px;
+            background:transparent;
+        }
+
+        .page-select-doctor .ui-form-item{
+            display: block;
+        }
+
+        .page-select-doctor .ui-form-item .doct-Tech{
+            /*font-size:12px;
+            color:#f30;*/
+        }
+        
+        .page-select-doctor .ui-form-item label{
+            width: auto !important;
+        }
+        .page-select-doctor .reservation-item:last-child{
+            margin-bottom:0;
+        }
+
+        .page-select-doctor .item-text{
+            margin-left:100px;
+        }
+
+        .page-select-doctor .ui-txt-info{
+            float: right;
+            position: absolute;
+            top: 0;
+            right:7.8%;
+            font-size:14px;
+        }
+
+
+        .page-select-doctor .ui-form-item label{
+            color:#000;
+        }
+
+        .page-select-doctor .ui-form-item,.page-select-doctor .ui-form-item label{
+            color:#999;
+        }
+
+        .reservation-item{
+            background:#fff;
+            margin-bottom:20px;
+        }
+
+        .reservation-item .ui-list-action{
+            position: absolute;
+            top: 0;
+            right:8%;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="page-select-doctor page wait" id="J_Page">
+        <div id="J_DoctorList" >
+            <div id="J_List">
+                <section class="ui-notice">
+                    <i></i>
+                    <p>没有排班信息</p>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!--#include file="/mods/head/footer.html"-->
+
+    <script >
+        seajs.use("pages/select-scheduling", function(){
+            seajs.use("libs/fastclick"); 
+        });
+    </script>
+
+</body>
+</html>

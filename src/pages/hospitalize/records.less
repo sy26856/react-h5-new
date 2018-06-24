@@ -1,0 +1,157 @@
+
+.no-patient {
+  margin: 0 21px;
+  display: none;
+  overflow: hidden;
+  //visibility: hidden;
+
+  .alert-span {
+    background-color: #fff;
+    height: 70px;
+    margin: 26px 0;
+
+    .p1 {
+      font-size: 16px;
+      color: #303030;
+      line-height: 16px;
+      padding: 12px;
+    }
+
+    .p2 {
+      font-size: 13px;
+      color: #888888;
+      line-height: 13px;
+      padding: 0 12px;
+
+    }
+  }
+}
+.inpatient {
+  position: relative;
+  background-color: #fff;
+  padding: 14px;
+  display: none;
+  //display: block;
+  overflow: hidden;
+  //visibility: hidden;
+
+  .inpatient-icon{
+    background-size: 100% 100%;
+    width: 46px;
+    height: 46px;
+    float: left;
+  }
+
+  .inpatient-info{
+    margin-left: 54px;
+    height: 46px;
+
+    .inpatient-name {
+
+      em{
+        font-size: 16px;
+        color: #303030;
+      }
+
+      .inpatient-choice {
+        float: right;
+        font-size: 13px;
+        line-height: 13px;
+        margin-top: 7px;
+        color: #45a7ff;
+      }
+    }
+
+    .inpatient-idNo{
+      font-size: 13px;
+      padding-top: 2px;
+      color: #888888;
+    }
+
+  }
+}
+
+.line-span{
+  position: relative;
+  display: none;
+
+  .line{
+    height: 1px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    top: 0;
+  }
+
+  .line-info{
+    position:absolute;
+    width: 100px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 9px;
+    margin: auto;
+    font-size: 13px;
+    color: #888888;
+    line-height: 13px;
+    background-color: #f8f8f8;
+    filter: alpha(opacity=100);
+    z-index: 10;
+  }
+}
+
+.hospitalize-list{
+  position: relative;
+
+
+  .hospitalize-item{
+    background-color: #fff;
+    margin-bottom: 11px;
+    height: 105px;
+    display: block;
+    overflow: hidden;
+    font-size: 13px;
+    line-height: 13px;
+    position: relative;
+    color: #888888;
+    padding: 0 15px;
+
+    .hospitalize-title{
+      padding: 8px 0;
+      color: #303030;
+    }
+    .hospitalize-status{
+      color: #ff9436;
+      position: absolute;
+      right: 15px;
+    }
+
+    .hospital-dept{
+      padding: 0 0 7px;
+      span{
+        position: absolute;
+        right:15px;
+        em{
+          color: #ff9436;
+        }
+      }
+    }
+
+    .hospital-name{
+      padding: 15px 0 7px;
+      font-size: 16px;
+      color: #303030;
+    }
+
+    .hospital-bed{
+      padding: 6px 0 0;
+      margin-bottom: 6px;
+      white-space: nowrap;
+
+      em{
+        margin-right: 10px;
+        color: #303030;
+      }
+    }
+
+  }
+}

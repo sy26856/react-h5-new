@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--#include file="/mods/head/index.html"  data='{"spmb":"1525"}' -->
+    <title>隐私声明</title>
+	<link rel="stylesheet" type="text/css" href="../../component/frozen.less.css">
+	<link rel="stylesheet" type="text/css" href="about.less.css">
+	
+</head>
+<body>
+	
+	<div class="about-page law-page page wait" id="J_Page">
+		<div class="content" id="J_Content">
+		
+		</div>
+	</div>
+
+	<!--#include file="/mods/head/footer.html"-->
+  <script>
+    window.location.href = window.location.href.replace('/pages/about', '')
+  </script>
+	<script >
+        seajs.use("pages/about/privacy", function(){
+            seajs.use("libs/fastclick"); 
+        })
+    </script>
+	
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--#include file="/mods/head/index.html"  data='{"spmb":"1300"}' -->
+    <title>报告单</title>
+    <link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+    <link rel="stylesheet" href="../mods/muliteTab/index.less.css">
+</head>
+<body>
+    <script>
+        window.location.href = window.location.href.replace('/pages', '')
+    </script>
+    <div class="h5-plugin-tab ui-border-bottom center" id="J_Tabs">
+        <div class="h5-plugin-tab-in J_In">
+            <ul id="J_TabList">
+                <li><a>检验报告</a></li>
+                <li><a>影像报告</a></li>
+            </ul>
+            <div class="h5-plugin-tab-silder J_Slider"></div>
+        </div>
+    </div>
+
+    <div id="J_Page">
+       
+
+    </div>
+
+    <!--#include file="/mods/head/footer.html"-->
+    <script>
+        seajs.use("pages/report", function(){
+            seajs.use("libs/fastclick"); 
+        });
+    </script>
+</body>
+</html>

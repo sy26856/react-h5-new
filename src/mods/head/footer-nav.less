@@ -1,0 +1,104 @@
+.footer-mask{
+	position:fixed;
+	z-index:99;
+	width:100%;
+	top:0;
+	left:0;
+	height:100%;
+	background:rgba(0,0,0,0.2);
+}
+
+.footer-nav{
+	position:fixed;
+	z-index:100;
+	width:100%;
+	bottom:0px;
+	-webkit-transform:translateY(3.5em);				
+	transform:translateY(3.5em);		
+	background-color:#fff;
+	color:#727272;
+	font-size:15px;
+	transition:transform .3s ease-out;
+	-webkit-transition:-webkit-transform .3s ease-out;
+	transition:transform .3s ease-out;
+
+	a{
+		color:#727272;
+		
+	}
+
+	&.show{
+		-webkit-transform:translateY(0em);	
+		transform:translateY(0em);				
+	}
+	.nav{
+		display: -webkit-box;
+		text-align: center;
+		line-height:3.5em;
+		.item{
+			position: relative;
+			-webkit-flex-basis:0;
+			-webkit-box-flex:1;
+			overflow: hidden;
+			.text{
+				display:block;
+				.icon{
+					display:inline-block;
+					width:1em;
+					height:1em;
+					vertical-align: middle;
+					background-image:url(http://s.yuantutech.com/i4/40c3f964acde19f50985e833cb7f9901-102-102.png);
+					background-size:100% 100%;
+					margin-top:-3px;
+					margin-right:2px;
+				}
+			}
+
+			&.open{
+				overflow:visible;
+				.dialog{
+					-webkit-transform:translateY(-4.5em);
+					transform:translateY(-4.5em);
+					opacity:1;
+					z-index:100;
+				}
+
+			}
+
+			.dialog{
+				position: absolute;
+				width:100%;
+				bottom:12px;
+				text-align: center;
+				line-height:3em;
+				transform:translateY(-4em);
+				opacity:0;
+				z-index: -1;
+				transition:transform .3s ease-out,opacity .3s ease-out;
+				-webkit-transition:-webkit-transform .3s ease-out, opacity .3s ease-out;
+				font-size:12px;
+				&:after{
+					content: "";
+					width:87px/4;
+					height:47px/4;
+					background-image:url(http://s.yuantutech.com/i4/d299cd38df205e6ecfcfeecd8f2486a2-87-47.png);
+					background-size:100% 100%;
+					position: absolute;
+					bottom:-11px;
+					left: 50%;
+   					margin-left: -11px;
+				}
+				.inner{
+					display: inline-block;
+					background-color:#fff;
+					max-width:100%;
+
+					li a{
+						display:block;
+						margin:0 1em;
+					}
+				}
+			}
+		}	
+	}
+}

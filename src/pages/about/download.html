@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--#include file="/mods/head/index.html"  data='{"spmb":"1522"}' -->
+    <title>下载慧医</title>
+	<link rel="stylesheet" href="download.less.css">
+</head>
+<body>
+	
+	<div class="page">
+		
+		<div class="banner"></div>
+		<div class="opts">
+			<div class="info">
+				
+				<h1>慧医</h1>
+				<h2>在线预约挂号</h2>
+				<p>免去排队烦恼</p>
+
+				<h2>在线充值缴费</h2>
+				<p>便捷支付结算</p>
+
+				<h2>随时随地查看报告单</h2>
+				<p>管理家人健康数据</p>
+
+			</div>
+			<div class="btns">
+				<!--https://appsto.re/cn/jTqh8.i-->
+				<a href="//www.pgyer.com/93UJ" title="ios 下载" class="ios-download J_Download"></a>
+				
+				<a href="//openbox.mobilem.360.cn/index/d/sid/3156440" title="android 下载" class="android-download J_Download"></a>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="mask-tips" id="abc"></div>
+	
+	<script>
+
+		//在微信中弹出在浏览器中打开的提示
+		var btn = document.getElementsByClassName("J_Download");
+		var ua = navigator.userAgent;
+		for(var i=0; i<btn.length; i++){
+			btn[i].addEventListener("click", function(e){
+				// console.log(e)
+				if(ua.indexOf("MicroMessenger") != -1){
+					e.preventDefault();
+					document.getElementById("abc").style.display="block";
+				}
+			}, false);
+		}
+	</script>
+	<!--MicroMessenger-->
+
+</body>
+</html>

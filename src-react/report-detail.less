@@ -1,0 +1,238 @@
+.report-detail {
+
+  .header {
+    background-image: url(//front-images.oss-cn-hangzhou.aliyuncs.com/i4/30917bb183d9f2cc65504bd6799e27f7-750-168.png);
+    background-size: cover;
+    padding: 15px 15px 15px 30px;
+    color: #fff;
+    font-size: 16px;
+    /* text-align: center; */
+    h1 {
+      font-size: 16px;
+      color: #fff;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 13px;
+      margin-bottom: 5px;
+    }
+  }
+  .j-icon-inspect {
+    width: 14px;
+    height: 18px;
+    background-image: url(//image.yuantutech.com/user/ed2dfe95013d8dcab6836b2be1a3a9d5-46-58.png);
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 5px;
+    display: inline-block;
+  }
+  .j-icon-address {
+    display: inline-block;
+    width: 14px;
+    height: 20px;
+    background-image: url(//image.yuantutech.com/user/f4b147a70734e7f877d287c5fb01fa1d-44-60.png);
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  .sub-info {
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    .info-block {
+      font-size: 14px;
+      flex-grow: 1;
+      .title {
+        color: #939393;
+      }
+    }
+  }
+  .tag-tips {
+    background-color: #f0f0f0;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .high-icon {
+    color: #f87c7c;
+  }
+  .low-icon {
+    color: #5ebcc2;
+    margin-left: 20px;
+  }
+  .report-item-container {
+    background-color: #fff;
+    width: 100%;
+    //overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+      //display: none;
+    }
+  }
+  .report-items {
+    width: 100%;
+    .item {
+      padding: 10px;
+      font-size: 14px;
+      border-bottom: 1px solid #eee;
+      td {
+        padding: 10px;
+        word-break: break-all;
+      }
+      & > td:nth-child(1) {
+        width: 30%;
+        //white-space: nowrap;
+      }
+      & > td:nth-child(2) {
+        width: 30%;
+        //white-space: nowrap;
+      }
+      td:nth-child(n+2) {
+        //white-space: nowrap;
+      }
+      td:nth-last-child(1) {
+        width: 40%;
+        //white-space: nowrap;
+      }
+    }
+    .item:not(.head) > td:nth-last-child(1){
+      color: #939393;
+    }
+    .item span:nth-child(2) {
+      text-align: center;
+    }
+    .item.high span:nth-child(-n+2) {
+      color: #f87c7c;
+    }
+    .item.low span:nth-child(-n+2) {
+      color: #5ebcc2;
+    }
+    .item.high td:nth-child(-n+2) {
+      color: #f87c7c;
+    }
+    .item.low td:nth-child(-n+2) {
+      color: #5ebcc2;
+    }
+  }
+  .image-report {
+    .image-report-info-block {
+      margin: 10px 0;
+    }
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
+  .report-info-panel {
+    background-color: #fff;
+    padding: 10px 15px;
+  }
+  .report-info-item {
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex;
+    -webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .report-info-item:first-of-type {
+    .report-info-item-time {
+      padding-top: 0;
+    }
+    .report-info-item-main {
+      padding-top: 0;
+    }
+  }
+  
+  .report-info-item-time, .report-info-item-main {
+    padding: 10px 0;
+  
+  }
+  
+  .report-info-item-time {
+    width: 80px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    position: relative;
+    left: 1px;
+    border-right: 1px solid #ddd;
+    div {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+  
+  .report-info-item-main {
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 10px;
+    flex: 1;
+    font-size: 12px;
+    border-left: 1px solid #ddd;
+  }
+  .report-info-item-main:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -4px;
+    margin-top: -3px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: block;
+    background-color: #ddd;
+  }
+  
+  .status-item-title {
+    color: #76acf8;
+    font-size: 13px;
+  }
+  .status-item-title-off {
+    font-size: 13px;
+    color: #ccc;
+  }
+  
+  .status-item-main {
+    color: #999;
+  }
+  
+  .report-info-panel-on {
+    text-align: center;
+    img {
+      width: 10px;
+    }
+  }
+  .report-info-panel-off {
+    text-align: center;
+    img {
+      width: 10px;
+      -webkit-transform: rotateZ(180deg);
+      -moz-transform: rotateZ(180deg);
+      -ms-transform: rotateZ(180deg);
+      -o-transform: rotateZ(180deg);
+      transform: rotateZ(180deg);
+    }
+  }
+  
+  .status-item-icon {
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 16px;
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+}

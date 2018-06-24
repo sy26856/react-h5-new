@@ -1,0 +1,148 @@
+.page-select-doctor {
+  .ui-form{
+    margin:10px;
+    background:transparent;
+    .ui-border-radius {
+      border: 1px solid #eee;
+    }
+  }
+  .ui-form-item{
+    display: block;
+
+    .doct-Tech{
+      /*font-size:12px;
+      color:#f30;*/
+    }
+    label{
+      width: auto !important;
+      color:#000;
+    }
+  }
+  .reservation-item:last-child{
+    margin-bottom:0;
+  }
+  .item-text{
+    margin-left:100px;
+  }
+  .ui-txt-info{
+    float: right;
+    position: absolute;
+    top: 0;
+    right:7.8%;
+    font-size:14px;
+  }
+}
+
+.page-select-doctor .ui-form-item,.page-select-doctor .ui-form-item label{
+  color:#999;
+}
+
+.reservation-item{
+  background:#fff;
+  margin-bottom:20px;
+  .ui-list-action{
+    position: absolute;
+    top: 0;
+    right:8%;
+  }
+}
+
+.rili-tag {
+  position: relative;
+  display: inline-block;
+  z-index: 100;
+  background: #47b9bb;
+  min-width: 60px;
+  text-align: center;
+  top: 0;
+  color: #fff;
+  padding: 5px 10px 5px 10px;
+}
+
+.rili-tag:after,
+.rili-tag:before {
+  content: "";
+  position: absolute;
+  border: 17px solid #47b9bb;
+  border-top-width: 30px;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  right: -17px;
+  top: 0;
+}
+.rili-tag:before {
+  border: 17px solid #47b9bb;
+  border-bottom-width: 30px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  top: auto;
+  bottom: 0;
+}
+
+.ui-form-item-link:after {
+  font-family: iconfont!important;
+  font-size: 32px;
+  line-height: 44px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: .2px;
+  display: block;
+  color: rgba(0, 0, 0, 0.5);
+  color: #c7c7c7;
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -22px;
+  margin-right: -10px;
+}
+.select-scheduling{
+.ui-notice {
+  position: static;
+  -webkit-box-pack: inherit;
+  margin: 20px 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: center;
+  text-align: center;
+  & > i {
+    display: block;
+    margin-bottom: 20px;
+  }
+  & > i:before {
+    font-family: iconfont!important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+    display: block;
+    content: "";
+    font-size: 100px;
+    line-height: 100px;
+    color: rgba(0, 0, 0, 0.3);
+  }
+  p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #bbb;
+    text-align: center;
+    padding: 0 15px;
+  }
+}
+}
+
+.doctor-dept-name {
+  margin-right: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  .doctor-dept-value {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

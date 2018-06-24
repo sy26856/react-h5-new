@@ -1,0 +1,158 @@
+.inpatient {
+  position: relative;
+  background-color: #fff;
+  padding: 14px;
+  margin-bottom: 5px;
+  display: block;
+  overflow: hidden;
+  //visibility: hidden;
+
+  .inpatient-icon {
+    background-size: 100% 100%;
+    width: 46px;
+    height: 46px;
+    float: left;
+  }
+
+  .inpatient-info {
+    margin-left: 54px;
+    height: 46px;
+
+    .inpatient-name {
+
+      em {
+        font-size: 16px;
+        color: #303030;
+      }
+    }
+
+    .inpatient-idNo {
+      font-size: 13px;
+      color: #888888;
+      padding-top: 2px;
+    }
+
+    .inpatient-choice {
+      float: right;
+      font-size: 13px;
+      line-height: 13px;
+      margin-top: 7px;
+      color: #45a7ff;
+    }
+  }
+}
+
+.hospitalize-item {
+  background-color: #fff;
+  height: 232px;
+  display: block;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 13px;
+  position: relative;
+  color: #888888;
+
+  .hospitalize-title {
+    padding: 0;
+
+    .row{
+      display: flex;
+      padding: 10px 14px;
+    }
+
+    .column{
+      display: inline-block;
+      width: 6em;
+      color: #888888;
+    }
+
+    .col-black{
+      color: #303030;
+    }
+
+    .hospitalize-status {
+      color: #ff9436;
+      position: absolute;
+      right:15px;
+    }
+  }
+
+  .hospital-name {
+    padding: 11px 14px 5px 14px;
+  }
+
+  .hospital-bed {
+    padding: 6px 14px 0 14px;
+    margin-bottom: 6px;
+    white-space: nowrap;
+
+    em {
+      margin-right: 10px;
+      color: #303030;
+    }
+  }
+
+  .hospital-cost {
+    padding: 0 14px;
+
+    .cost-sum {
+      color: #ff9436;
+    }
+  }
+}
+
+.line-span{
+  position: relative;
+
+  .line {
+    height: 1px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    top: 0;
+  }
+
+  .line-info {
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 9px;
+    margin: auto;
+    font-size: 13px;
+    color: #888888;
+    line-height: 13px;
+    background-color: #f8f8f8;
+    filter: alpha(opacity=100);
+    z-index: 10;
+  }
+
+}
+
+.daily-list {
+  position: relative;
+
+  .daily-item {
+    margin-bottom: 11px;
+
+    background-color: #fff;
+    height: 13px;
+    display: block;
+    overflow: hidden;
+    font-size: 13px;
+    line-height: 13px;
+    padding: 14px;
+    position: relative;
+    color: #888888;
+
+    .date-em{
+      color: #888888;
+    }
+    .daily-cost {
+      color: #ff9436;
+      float: right;
+      margin-right: 50px;
+    }
+  }
+
+}

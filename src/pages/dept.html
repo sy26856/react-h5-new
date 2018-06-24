@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--#include file="/mods/head/index.html"  data='{"spmb":"1211"}' -->
+  <title>科室</title>
+  <link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+  <link rel="stylesheet" type="text/css" href="./doctor.less.css">
+  <script>
+    window.location.href = window.location.href.replace('/pages', '')
+  </script>
+</head>
+<body>
+<style>
+  .deptLogo {
+    display: block;
+    background-image: url("//image.yuantutech.com/user/b3520edbaa903e5492a819ec5542ecbb-130-130.png");
+    background-size: cover;
+    width: 65px;
+    height: 65px;
+  }
+
+  .jieshao {
+    display: inline-block;
+    width: 15px;
+    height: 14px;
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 3px;
+    margin-top: -4px;
+    background-image: url("//image.yuantutech.com/user/f6bd4092e9f297ed78bd6a9bff1cfa87-25-25.png");
+  }
+</style>
+
+<div class="page-index page">
+
+  <div id="J_DeptInfo" class="page wait">
+
+  </div>
+
+  <div id="J_PaiBan">
+
+  </div>
+</div>
+
+<!--#include file="/mods/head/footer.html"-->
+<script>
+  seajs.use("pages/dept", function () {
+    seajs.use("libs/fastclick");
+  });
+</script>
+</body>
+</html>

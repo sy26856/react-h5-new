@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--#include file="/mods/head/index.html"  data='{"spmb":"1521"}' -->
+    <title>关于我们</title>
+	<link rel="stylesheet" type="text/css" href="../../component/frozen.less.css">
+	<link rel="stylesheet" type="text/css" href="about.less.css">
+	<style>
+		.img{
+			text-align: center;
+			height:320px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="page about-page wait" id="J_Page">
+		<div class="content" id="J_Content">
+			<!--<div class="img">-->
+				<!--<img src="//s.yuantutech.com/i4/a32b6d666e48dd5fb1cc781f3b1001be-300-300.png" alt="">-->
+			<!--</div>-->
+			<!--<p id="aboutNotes">青岛市市民健康信息系统平台是由青岛市卫生与计划生育委员会和中信银行青岛分行共同开发。旨在建立全市统一的市民健康档案，为市民提供健康医疗服务。平台包括健康政策信息、健康教育信息、我的健康信息、预约挂号平台、医疗机构接入服务与管理、医疗资讯信息、客服、满意度测评等服务内容。其中线下智慧医院旨在方便就医、优化就医流程，包括区域诊疗卡发放、充值、挂号、缴费、取报告单、排队叫号、医院导航等功能模块。</p>-->
+
+			<!--<p> <strong>感谢本平台技术支持方浙江远图互联科技股份有限公司</strong> </p>-->
+		</div>
+	</div>
+	<!--#include file="/mods/head/footer.html"-->
+	<script>
+		window.location.href = window.location.href.replace('/pages/about', '')
+	</script>
+	<script >
+		seajs.use("pages/about/about", function(){
+			seajs.use("libs/fastclick");
+		})
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+#patient-info-60 {
+  font-family: PingFangSC-Regular;
+}
+#patient-info-60 .page-add-patient {
+  padding-bottom: 70px;
+}
+#patient-info-60 .page-add-patient .ui-list li {
+  display: block;
+}
+#patient-info-60 .page-add-patient .delete-link {
+  text-align: center;
+  display: block;
+}
+#patient-info-60 input::-webkit-input-placeholder,
+#patient-info-60 textarea::-webkit-input-placeholder {
+  /* WebKit*/
+  color: #999;
+}
+#patient-info-60 input:-moz-placeholder,
+#patient-info-60 textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #999;
+}
+#patient-info-60 input::-moz-placeholder,
+#patient-info-60 textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999;
+}
+#patient-info-60 input:-ms-input-placeholder,
+#patient-info-60 textarea:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #999;
+}
+#patient-info-60 .icon-ation-info {
+  display: inline-block;
+  background-image: url(/image.yuantutech.com/user/ab3d86555e44ca453c368c47516dac78-60-60.png);
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: -5px;
+}
+#patient-info-60 .confirm-title {
+  padding: 10px 15px;
+  background-color: #fff;
+  color: #777;
+}
+#patient-info-60 .confirm-tips {
+  margin-top: 10px;
+}
+#patient-info-60 .confirm-tips ul {
+  font-size: 14px;
+  color: #333;
+  margin: 0 15px;
+}
+#patient-info-60 .checkbox-name {
+  color: #777;
+}
+#patient-info-60 .ui-footer {
+  position: fixed;
+  bottom: 0;
+  height: 56px;
+  background-color: #f8f8f8;
+}
+#patient-info-60 .page-add-patient {
+  padding-top: 20px;
+}
+#patient-info-60 #J_idNo input,
+#patient-info-60 #guarderIdNo {
+  text-transform: uppercase;
+}
+#patient-info-60 .notice-top {
+  margin-top: 10px;
+}
+#patient-info-60 .patient-notice-msg {
+  color: #444;
+}
+#patient-info-60 .patient-notice-msg > p {
+  margin-bottom: 5px;
+}
+#patient-info-60 .add-patient-label {
+  padding: 0 15px 15px 15px;
+  color: #666;
+}
+#patient-info-60 .select-patient-type {
+  background-color: #fff;
+  padding: 15px 10px;
+}
+#patient-info-60 .select-patient-type:after {
+  content: "";
+  display: block;
+  clear: both;
+  width: 0;
+}
+#patient-info-60 .select-patient-item {
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #999;
+  width: 136px;
+  font-size: 12px;
+  box-sizing: border-box;
+  padding: 8px 0 8px 8px;
+}
+#patient-info-60 .select-patient-item img {
+  float: left;
+  width: 34px;
+  height: 34px;
+}
+#patient-info-60 .patient-select-icon {
+  background: url(https://front-images.oss-cn-hangzhou.aliyuncs.com/i4/8d59e17dc7f5fbea5f4c5daccff6bcea-56-56.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28px;
+  height: 28px;
+}
+#patient-info-60 .id-toggle {
+  position: absolute;
+  right: 14px;
+  padding: 16px 10px;
+  width: 20px;
+}
+#patient-info-60 .card-loading {
+  padding: 15px;
+  line-height: 16px;
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+}
+#patient-info-60 .card-loading span {
+  margin-top: -2px;
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(https://front-images.oss-cn-hangzhou.aliyuncs.com/i4/936c6bc9ef79a7381692d5ca31661457-64-64.png) no-repeat;
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+  -webkit-animation: card-loading 1s linear infinite;
+  -o-animation: card-loading 1s linear infinite;
+  animation: card-loading 1s linear infinite;
+}
+@keyframes card-loading {
+  from {
+    -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+#patient-info-60 .ui-form-item input {
+  text-align: right;
+}
+#patient-info-60 .ui-switch input:checked:before {
+  border-color: #429fff;
+  -webkit-box-shadow: #429fff 0 0 0 16px inset;
+  box-shadow: #429fff 0 0 0 16px inset;
+  transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;
+  -webkit-transition: border 0.4s, -webkit-box-shadow 0.4s, background-color 1.2s;
+  background-color: #429fff;
+}
+#patient-info-60 .ui-form-item label:not(.ui-switch):not(.ui-checkbox):not(.ui-radio) {
+  width: 98px;
+}
+#patient-info-60 .btn-wrapper.g-footer {
+  display: flex;
+  height: 23px;
+  background: none;
+  position: fixed;
+  bottom: 0;
+  padding: 0;
+  min-height: 50px;
+  border-top: 1px solid #429fff;
+}
+#patient-info-60 .delete {
+  width: 50%;
+  height: 100%;
+  color: #429fff;
+  background-color: #fff;
+  line-height: 50px;
+  text-align: center;
+}

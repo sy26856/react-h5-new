@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include file="/mods/head/index.html"  data='{"spmb":"1541"}' -->
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+    <link rel="stylesheet" type="text/css" href="./info-confirm.less.css">
+    <style type="text/css">
+
+        .page-signin .top-notice{
+            font-size:14px;
+            text-align: center;
+            line-height:3em;
+            display: block;
+            background-color:#FAED96;
+            margin-bottom:20px;
+        }
+
+        .page-signin .go-register{
+            margin-bottom: 20px;
+        }
+
+        .register-link{
+            text-align:right;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-signin">
+        <!--<a class="top-notice ui-border-b" href="forget-pwd.html?target=_blank">老用户点击重设密码</a>-->
+        <div class="ui-form ui-border-tb ui-label2word">
+            <div class="ui-form-item ui-form-item-show  ui-border-b">
+                <label for="J_PhoneNumber">手机:</label>
+                <input type="number" value="" id="J_PhoneNumber" placeholder="请输入手机号码">
+            </div>
+            <div class="ui-form-item ui-form-item-show ">
+                <label for="J_Pwd">密码:</label>
+                <input type="password" value="" id="J_Pwd" placeholder="请输入登录密码">
+            </div>
+
+        </div>
+
+        <div class="ui-btn-wrap">
+            <button class="ui-btn-lg ui-btn-primary" id="J_Submit">
+                登录
+            </button>
+        </div>
+
+
+
+        <div class="register-link" id="J_RegisterLink">
+            <a href="register.html?target=_blank" style="float:left;margin-left:10px;" class="go-register">注册新用户</a>
+            <a href="forget-pwd.html?target=_blank" class="go-register">忘记密码？</a>
+        </div>
+
+    </div>
+
+    <!--#include file="/mods/head/footer.html"-->
+
+    <script >
+        seajs.use(["pages/sign-in","mods/register-token/index"], function(){
+            seajs.use("libs/fastclick");
+        });
+    </script>
+
+
+</body>
+</html>

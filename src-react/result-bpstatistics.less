@@ -1,0 +1,164 @@
+.bp-con-tip{
+    line-height:30px;
+    color:#999;
+    position:absolute;
+    top:50%;left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size:14px;
+    text-align: center;
+    .con-tip-img{
+        width:80px;
+    }
+}     
+.bp-detect-box{
+    background:#fff;
+    font-size:12px;
+    padding:0 10px;
+    margin-bottom:15px;
+    .bp-detect-head{
+        padding:10px 0;
+        .bp-con-header{
+            display:flex;
+            padding:0 10px;
+            margin-top:15px;
+            .bp-header-title{
+                width:50%;
+                box-sizing: border-box;
+                font-size:14px;
+                text-align:center;
+                color:#999999;
+            }
+        }
+        .bp-con-result{
+            height:180px;
+            line-height: 180px;
+            text-align: center;
+            border-radius:100%;
+            position:relative;
+            margin-top:5px;
+            margin-bottom:5px;
+        }
+        .con-result-tip{
+            width:100px;
+            height:100px;
+            position:absolute;
+            left:50%;top:50%;
+            transform: translateX(-50%) translateY(-50%);
+            background:#fff;
+            text-align:center;
+            line-height:30px;
+            border-radius:100%;
+            z-index: 999;
+            color:#949da4;
+            .con-result-day{
+                font-size:28px;
+                line-height:100px;
+                font-weight:bold;
+                color:#949da4;
+            }
+            .con-result-diet{
+                font-size:18px;
+                color:#949da4;
+            }
+        }
+        .bp-result-nor{
+            text-align:center;
+            line-height:30px;
+            font-size:14px;
+            color:#c0ed81;
+        }
+        .bp-result-color{
+            display:inline-block;
+            width:6px;
+            height:6px;
+            border-radius:100%;
+        }
+        .bp-result-text{
+            margin:0 10px;
+            font-size:12px;
+            color:#666;
+            display:inline-block;
+        }
+        .bp-result-num{
+            font-size:15px;
+            color:#666;
+            font-weight:bold;
+        }
+        .bp-con-times{
+            display:-webkit-flex;
+            display:flex;
+            flex-wrap:wrap-reverse;
+            justify-content: space-around;
+            padding:0 25px 25px;
+            p{
+                padding-left:10px;
+                padding-right:10px;
+                box-sizing: border-box;
+                margin:0;
+            }
+            p:nth-child(3),p:nth-child(6){
+                width:103px;
+            }
+            p:nth-child(1),p:nth-child(4){
+                width:91px;
+            }
+        }
+    }
+    .bp-detect-con{
+        display:-weblit-flex;
+        display:flex;
+        padding:15px;
+        border-top:1px solid #eee;
+        border-bottom:1px solid #eee;
+        position:relative;
+        .bp-result-line{
+            height:50px;
+            border-left:1px solid #eee;
+            position:absolute;
+            left:50%;top:55px;
+            transform: translateY(-50%);
+        }
+        .bp-con-left{
+            padding-right:25px;
+        }
+        .bp-con-right{
+            padding-left:25px;
+        }
+        .bp-con-left,.bp-con-right{
+            width: 50%;
+            box-sizing: border-box;
+            .bp-con-kon{
+                height:52px;
+                line-height:52px;
+                margin-top:15px;
+            }
+            .bp-con-per{
+                color:#333;
+                text-align:left;
+                font-size:13px; 
+                height:52px;
+                margin-top:15px;
+                .bp-con-item{
+                    line-height:20px;
+                    margin-bottom:6px;
+                }
+                .bp-con-per-num{
+                    font-size:20px;
+                    margin-right:5px;
+                }       
+            }
+            .bp-con-title{
+                font-size:14px;
+                text-align:left;
+            }
+            .bp-result-time{
+                margin-top:15px;
+                color:#999;
+                margin-bottom:0;
+                font-size:12px;
+                text-align:left;
+                line-height:15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--#include file="/mods/head/index.html"  data='{"spmb":"1211"}' -->
+  <title>医生</title>
+  <link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+  <link rel="stylesheet" type="text/css" href="./doctor.less.css">
+  <script>
+    window.location.href = window.location.href.replace('/pages', '')
+  </script>
+</head>
+<body>
+
+
+<div class="page-index page">
+
+  <div id="J_DoctorInfo" class="page wait">
+
+  </div>
+
+  <div id="J_PaiBan">
+
+  </div>
+</div>
+
+<!--#include file="/mods/head/footer.html"-->
+<script>
+  seajs.use("pages/doctor", function () {
+    seajs.use("libs/fastclick");
+  });
+</script>
+</body>
+</html>

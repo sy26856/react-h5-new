@@ -1,0 +1,67 @@
+.fill-info {
+  font-family: PingFangSC-Medium;
+}
+.fill-info .checkedSty {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #a7a6a6;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.fill-info .selectedKey {
+  background: url('images/report-doc/check.png');
+  background-size: 100%;
+  border: none;
+}
+.fill-info .list-left {
+  float: left;
+  width: 120px;
+  height: 100%;
+  line-height: 26px;
+}
+.fill-info .list-border {
+  width: 68px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 12px;
+  color: #429fff;
+  border: solid 1px #429fff;
+  border-radius: 3px;
+  margin-left: 10px;
+  float: right;
+}
+.fill-info .list-back {
+  background: #429fff;
+  color: #fff;
+}
+.fill-info .ul_data {
+  max-height: 80%;
+  overflow-y: scroll;
+  padding: 10px 0;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+}
+.fill-info .ul_data li {
+  font-size: 14px;
+  color: #999;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  color: #333;
+  padding-left: 15px;
+}
+.fill-info .search_cancel {
+  text-align: center;
+  color: #429fff;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fill-info #btn_disabled {
+  background-color: #cccccc!important;
+}

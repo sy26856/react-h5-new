@@ -1,0 +1,78 @@
+.reservation-panel-item {
+  position: relative;
+  &:first-letter {
+    letter-spacing: 1em;
+  }
+  span {
+    color: #a3a3a3;
+    margin-right: 8px;
+  }
+  color: #666;
+  .suspend-txt {
+    color: #fd8f01;
+    position: absolute;
+    right: 0;
+    margin: 0;
+  }
+}
+
+.reservation-pannel-no-letter {
+  span {
+    color: #a3a3a3;
+    margin-right: 8px;
+  }
+  color: #666;
+}
+
+.reservation-item-foot {
+  position: relative;
+  min-height: 50px;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #fff;
+  text-align: right;
+  button:not(:last-of-type) {
+    margin-right: 10px;
+  }
+}
+.get-order-number {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -8px;
+  color: #ff3300;
+  font-size: 12px;
+}
+.reservation-item-corp-info {
+  position: relative;
+  padding-right: 20px;
+  .corp-name {
+    color: #333;
+    position: relative;
+    top: 1px;
+    span {
+      content: "";
+      display: inline-block;
+      position: relative;
+      top: 2px;
+      margin-left: 4px;
+      width: 14px;
+      height: 14px;
+      background: url(https://front-images.oss-cn-hangzhou.aliyuncs.com/i4/2e827131b1c75d51fbc4810ff3e8bc1b-64-64.png) no-repeat;
+      background-size: cover;
+    }
+  }
+  .reg-text {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    vertical-align: middle;
+    background-color: #76acf8;
+    margin-right: 4px;
+    color: #fff;
+    border-radius: 50%;
+  }
+}

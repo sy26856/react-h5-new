@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include file="/mods/head/index.html"  data='{"spmb":"1501"}' -->
+    <title>就诊人列表</title>
+    <link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+    <style type="text/css">
+
+        .page-patient-list .ui-list{
+            margin-top:20px;
+        }
+        .page-patient-list .ui-list li{
+
+            display:block;
+        }
+
+        .page-patient-list .ui-txt-info{
+            font-size:13px;
+        }
+
+        .ui-list-link li a{
+            color:#000;
+        }
+
+        .page-patient-list .ui-form{
+            margin-top:20px;
+        }
+
+
+        .ui-list a{
+            display: block;
+        }
+
+    </style>
+    <script>
+      location.href=location.href.replace("/pages/","/");
+    </script>
+</head>
+<body>
+    
+    <div class="page-patient-list">
+        
+        <a class="ui-center-link ui-border-tb" id="J_AddPatient" href="./pages/add-patient.html?target=_blank">
+            添加就诊人
+        </a>
+        <div id="J_PatientList">
+            
+        </div>
+    </div>
+
+    
+
+    <!--#include file="/mods/head/footer.html"-->
+
+    <script>
+        seajs.use("pages/patient-list", function(){
+            seajs.use("libs/fastclick"); 
+        });
+    </script>
+</body>
+</html>

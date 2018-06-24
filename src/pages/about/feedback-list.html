@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--#include file="/mods/head/index.html"  data='{"spmb":"1523"}' -->
+    <title>意见反馈</title>
+	<link rel="stylesheet" type="text/css" href="../../component/frozen.less.css">
+
+	<style>
+		body{
+			-webkit-user-select: initial !important;
+		}
+		li{
+			word-break: break-word;
+    		box-sizing: border-box;	
+    		padding-left:10px !important;
+    		margin-left:0 !important;
+    		font-size:12px;
+    		display: block !important;
+		}
+
+		li div:last-child,li div:nth-last-of-type(2){
+			color:#999;
+		}
+
+	</style>
+
+</head>
+<body>
+	
+	<div class="page wait" id="J_Page">
+		<div id="J_List">
+			<section class="ui-notice" >
+                <i></i>
+                <p>没有反馈记录</p>
+            </section> 
+		</div>
+		<div class="loading small hidden" id="J_PullLoading"></div>
+	</div>
+	
+	<!--#include file="/mods/head/footer.html"-->
+
+    <script >
+        seajs.use("pages/about/feedback-list", function(){
+            seajs.use("libs/fastclick"); 
+        });
+    </script>
+
+</body>
+</html>

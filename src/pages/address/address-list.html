@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include file="/mods/head/index.html"  data='{"spmb":"1707"}' -->
+    <title>收获地址</title>
+    <link rel="stylesheet" type="text/css" href="../../component/frozen.less.css">
+    <style type="text/css">
+        .page-address-list .ui-list{
+            margin-top:20px;
+        }
+        .page-address-list .ui-list li{
+
+            display:block;
+        }
+
+        .page-address-list .ui-txt-info{
+            font-size:13px;
+        }
+
+        .ui-list-link li a{
+            color:#000;
+        }
+
+        .page-address-list .ui-form{
+            margin-top:20px;
+        }
+
+
+        .ui-list a{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="page-address-list">
+        
+        <a class="ui-center-link ui-border-tb" id="J_AddPatient" href="add-address.html?target=_blank">
+            添加收获地址
+        </a>
+    
+        <div class="page wait" id="J_Page">
+            <div id="J_List">
+                
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!--#include file="/mods/head/footer.html"-->
+
+    <script>
+        seajs.use("pages/address/address-list", function(){
+            seajs.use("libs/fastclick"); 
+        });
+    </script>
+</body>
+</html>

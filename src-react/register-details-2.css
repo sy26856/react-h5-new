@@ -1,0 +1,67 @@
+.register-details-2 .icon-401 {
+  background-image: url(https://image.yuantutech.com/i4/b99caa162b639d1c1d00876e4e054f61-84-84.png);
+}
+.register-details-2 .loading-box {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999999;
+  background: rgba(0, 0, 0, 0.5);
+}
+.register-details-2 .loading-box .load-wrap {
+  width: 100px;
+  margin: 200px auto;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 16px;
+  text-align: center;
+  border-radius: 6px;
+  -webkit-animation: loading-icon 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: loading-icon 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.register-details-2 .loading-box .detail-loading {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(http://image.yuantutech.com/i4/669bd63618536f065ff2cc8f5b1edd70-60-60.png);
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.register-details-2 .loading-box .load-msg {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 3px;
+  color: #fff;
+}
+.register-details-2 .ad-banner {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.register-details-2 .ad-img {
+  width: 100%;
+  height: 94px;
+  display: block;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.register-details-2 .register-btn-container button {
+  margin: 0 5px;
+}
+.register-details-2 .register-btn-container .icon-hook-gray {
+  background-image: url(https://front-images.oss-cn-hangzhou.aliyuncs.com/i4/7c8c9dc4f0fd45067ca4c9d17ebeba2e-54-54.png);
+}
+.register-details-2 .register-btn-container .icon-data-ready {
+  background-image: url(https://front-images.oss-cn-hangzhou.aliyuncs.com/i4/5e1fc99f982b6d7e696569eb7e72487c-54-54.png);
+}
+.register-details-2 .register-btn-container .icon-data-y-wait {
+  background-image: url(https://front-images.oss-cn-hangzhou.aliyuncs.com/i4/18ac34c44a00937823e11d0cb2923081-54-54.png);
+}
+.register-details-2 .register-btn-container .des-info {
+  color: #f15a4a;
+}

@@ -1,0 +1,76 @@
+.h5-plugin-tab{
+  height:47px;
+  background-color: #fff;
+  position: relative;
+  z-index: 1000;
+  border-bottom: 1px solid #dcdcdc;
+  overflow:hidden;
+}
+
+.h5-plugin-tab-in{
+	  position: relative;
+	  white-space: nowrap;
+	  margin-right:6px;
+	  margin-left:6px;
+	  font-size: 0;
+	  height: 100%;
+	  overflow:scroll;
+	  overflow-y: hidden;
+	  -webkit-overflow-scrolling:touch;
+	  height:60px;
+}
+
+.h5-plugin-tab li{
+	cursor: pointer;
+	display: inline-block;
+	// margin-left:20px;
+}
+
+.h5-plugin-tab li a,.h5-plugin-tab li .a{
+    font-size:16px;
+    line-height:3em;
+    display: block;
+    color: #888888;
+    text-decoration: none;
+}
+
+.h5-plugin-tab .on a,.h5-plugin-tab .on .a{
+    color: #45a7ff;
+}
+
+.h5-plugin-tab.center{
+  text-align:center;
+  height: 48px;
+  // background: #f6f6f6;
+  // position: relative;
+  // z-index: 1000;
+  border-bottom: 1px solid #dcdcdc;
+  
+}
+
+.h5-plugin-tab.center ul{
+	
+	 display:-webkit-box;
+}
+
+.h5-plugin-tab.center li{
+	display: block !important;
+	-webkit-box-flex: 1;
+}
+
+
+.h5-plugin-tab-silder{
+	//background: rgb(247, 40, 98);
+  	background: #45a7ff;
+	height: 3px;
+	position: relative;
+	width: 0px;
+	display: block;
+	left: 0px;
+	-webkit-transition: -webkit-transform 0.2s ease-in-out, width 0.2s ease-out;
+	transition: -webkit-transform 0.2s ease-in-out, width 0.2s ease-out;
+	-webkit-transform: translateX(0px);
+	padding: 0px;
+	margin-top: -3px;
+	z-index: 10;
+}

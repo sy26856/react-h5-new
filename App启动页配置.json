@@ -1,0 +1,19 @@
+{
+	"android":{
+		"launch":{
+			"y320x480":"http://s.yuantutech.com/yuantu/app-design-resources/1.0.15/android/launch/2-320-480.jpg",
+			"y480x800":"http://s.yuantutech.com/yuantu/app-design-resources/1.0.15/android/launch/2-480-800.jpg",
+			"y720x1280":"http://s.yuantutech.com/yuantu/app-design-resources/1.0.15/android/launch/2-720-1280.jpg",
+			"y1080x1920":"http://s.yuantutech.com/yuantu/app-design-resources/1.0.15/android/launch/2-1080-1920.jpg"
+		}
+	},
+	"ios":{
+		"launch":{
+			"y320x480":"http://s.yuantutech.com/yuantu/app-design-resources/1.0.15/ios/launch/2-320-480.jpg",
+			"y640x960":"http://s.yuantutech.com/yuantu/app-design-resources/1.0.15/ios/launch/2-640-960.jpg",
+			"y640x1136":"http://s.yuantutech.com/yuantu/app-design-resources/1.0.15/ios/launch/2-640-1136.jpg",
+			"y750x1334":"http://s.yuantutech.com/yuantu/app-design-resources/1.0.15/ios/launch/2-750-1334.jpg",
+			"y1242x2208":"http://s.yuantutech.com/yuantu/app-design-resources/1.0.15/ios/launch/2-1242-2208.jpg"
+		}
+	}
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--#include file="/mods/head/index.html"  data='{"spmb":"1530"}' -->
+    <title>法律须知</title>
+	<link rel="stylesheet" type="text/css" href="../../component/frozen.less.css">
+	<link rel="stylesheet" type="text/css" href="about.less.css">
+	
+</head>
+<body>
+	
+	<div class="about-page law-page page wait" id="J_Page">
+		<div class="content" id="J_Content">
+			<div class="ui-tips center">没有法律须知内容</div>
+		</div>
+	</div>
+	
+	<!--#include file="/mods/head/footer.html"-->
+  <script>
+    window.location.href = window.location.href.replace('/pages/about', '')
+  </script>
+	<script >
+        seajs.use("pages/about/law", function(){
+            seajs.use("libs/fastclick"); 
+        })
+    </script>
+</body>
+</html>

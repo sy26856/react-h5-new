@@ -1,0 +1,114 @@
+/**
+    test 1122222  1111111122
+    以前的测试号
+    wx18d0a76a5f85b7eb
+    ccf8ab9a72171d86c5743987283c9af6
+    获取 https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx18d0a76a5f85b7eb&secret=ccf8ab9a72171d86c5743987283c9af6
+    
+    智慧健康服务平台
+    wx18d0a76a5f85b7eb
+    ccf8ab9a72171d86c5743987283c9af6
+    https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx18d0a76a5f85b7eb&secret=ccf8ab9a72171d86c5743987283c9af6
+
+    远图测试
+    wxd0773e308e4bc5fc
+    7cb108e505920568f2d7f0b545386214
+    获取 https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxd0773e308e4bc5fc&secret=7cb108e505920568f2d7f0b545386214
+    //open id oGEnNs2haJEBCBBdfcYsHuCddTJs
+    
+    健康青岛 - 线上
+    wx1236104cc6475242
+    64e191cf8bb0fd08237c94e00f1b1427
+    获取 https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx1236104cc6475242&secret=64e191cf8bb0fd08237c94e00f1b1427
+    
+    广州番禺民生卡公众号 -线上
+    wx4c7f799977a9154e
+    898aad264a10ed2523d9328badda1f02
+    获取 https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx4c7f799977a9154e&secret=898aad264a10ed2523d9328badda1f02
+    
+    
+    定义菜单  http://mp.weixin.qq.com/debug
+
+    公众号: http://s.yuantutech.com/i4/a3b81e588f42786664adb16341a85769-430-430.jpg
+
+
+    http://s.yuantutech.com/tms/fb/weixin-nav-uat.php
+    http://s.yuantutech.com/tms/fb/weixin-nav.php
+
+
+*/
+
+
+
+{
+    "button": [
+        {
+            "type": "view", 
+            "name": "医院列表", 
+            "url": "http://s.yuantutech.com/tms/h5/transfer.php?transferKey=1&unionId=29",
+        }, 
+        {
+            "name": "我的", 
+            "sub_button": [
+                {
+                    "type": "view", 
+                    "name": "我的预约", 
+                    "url": "http://s.yuantutech.com/tms/h5/transfer.php?transferKey=7&unionId=29", 
+                }, 
+                {
+                    "type": "view", 
+                    "name": "就诊人", 
+                    "url": "http://s.yuantutech.com/tms/h5/transfer.php?transferKey=12&unionId=29", 
+                }, 
+                {
+                    "type": "view", 
+                    "name": "我的缴费", 
+                    "url": "http://s.yuantutech.com/tms/h5/transfer.php?transferKey=4&unionId=29", 
+                }, 
+                {
+                    "type": "view", 
+                    "name": "健康档案", 
+                    "url": "http://s.yuantutech.com/tms/h5/transfer.php?transferKey=10&unionId=29", 
+                }, 
+                {
+                    "type": "view", 
+                    "name": "健康资讯", 
+                    "url": "http://s.yuantutech.com/tms/h5/transfer.php?transferKey=21&unionId=29", 
+                }
+            ]
+        }, 
+        {
+            "name": "帮助", 
+            "sub_button": [
+                {
+                    "type": "view", 
+                    "name": "下载慧医", 
+                    "url": "http://nocache-s.yuantutech.com/tms/fb/app-download.html?unionId=29", 
+                }, 
+                {
+                    "type": "view", 
+                    "name": "关于我们", 
+                    "url": "http://s.yuantutech.com/tms/h5/transfer.php?transferKey=20&unionId=29", 
+                }, 
+                {
+                    "type": "view", 
+                    "name": "意见反馈", 
+                    "url": "http://s.yuantutech.com/tms/h5/transfer.php?transferKey=16&unionId=29", 
+                }, 
+                {
+                    "type": "view", 
+                    "name": "法律须知", 
+                    "url": "http://s.yuantutech.com/tms/h5/transfer.php?transferKey=17&unionId=29", 
+                }, 
+                {
+                    "type": "view", 
+                    "name": "隐私声明", 
+                    "url": "http://s.yuantutech.com/tms/h5/transfer.php?transferKey=18&unionId=29",
+                }
+            ]
+        }
+    ]
+}
+
+
+

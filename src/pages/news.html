@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include file="/mods/head/index.html"  data='{"spmb":"1540"}' -->
+    <title>资讯</title>
+    <link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+    <link rel="stylesheet" type="text/css" href="/??pages/news.less.css,mods/muliteTab/index.less.css">
+    <script>
+      window.location.href = window.location.href.replace('/pages', '')
+    </script>
+</head>
+<body>
+    
+    <div class="page-news page wait" id="J_Page">
+       	
+        <!--#include file="/mods/muliteTab/index.html"-->
+        <div class="news-list" id="J_NewsList">
+            <section class="ui-notice" >
+                <i></i>
+                <p>没有资讯信息</p>
+            </section>
+        </div>
+       
+    </div>
+    
+
+    <!--#include file="/mods/head/footer.html"-->
+
+    <script >
+        seajs.use(["mods/muliteTab/index","pages/news"], function(){
+            seajs.use("libs/fastclick"); 
+        });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include file="/mods/head/index.html"  data='{"spmb":"1502"}' -->
+    <title>收获地址管理</title>
+    <link rel="stylesheet" type="text/css" href="../../component/frozen.less.css">
+    <link rel="stylesheet" type="text/css" href="../../component/y-ui-btn.less.css">
+    <style type="text/css">
+
+        .page-add-patient .ui-list li{
+
+            display:block;
+        }
+
+        .page-add-patient .delete-link{
+            text-align: center;
+            display: block;
+        }
+
+        .ui-form-item-textarea{
+            height: auto;
+        }
+
+        .ui-form-item-textarea textarea{
+            padding-left:0;
+            margin-top:40px;
+            height:3em;
+            resize:none;
+        }
+
+        .ui-form-item-textarea textarea{
+            resize:none;
+            color:#000;
+            height:5em;
+            border:1px solid #eaeaea;
+            padding:5px;
+            font-size:14px;
+            border-radius:2px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="page-add-patient wait" id="J_Page"></div>
+
+    <!--#include file="/mods/head/footer.html"-->
+
+    <script >
+        seajs.use("pages/address/add-address", function(){
+            seajs.use("libs/fastclick");
+        })
+    </script>
+
+</body>
+</html>

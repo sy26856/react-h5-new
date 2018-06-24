@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--#include file="/mods/head/index.html"  data='{"spmb":"1510"}' -->
+    <title>账单</title>
+	<link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+	<style>
+
+		.page-bill .ui-txt-info{
+			-webkit-box-flex:6;
+			line-height:1.3em;
+			margin-left:10px;
+			color:#000;
+		}
+
+		.page-bill .ui-list a{
+			display:-webkit-box;
+			width:100%;
+		}
+
+
+		.page-bill .ui-list > li{
+			margin-left:0 !important;
+			overflow: hidden;
+		}
+		.page-bill .ui-list-text h4{
+		    -webkit-box-flex: inherit;
+		    width:50px;
+		}
+
+		.page-bill .ui-list-text > li{
+			padding:15px 0;
+		}
+
+		.page-bill .ui-nowrap{
+			text-align: center;
+		    line-height: 1.3em;
+		    color: #999;
+		}
+
+		.page-bill .icon-zhi,.page-bill .icon-wx,.page-bill .icon-yu,.page-bill .icon-card{
+			border-radius:50%;
+			margin:0 10px;
+			transform:scale(0.85);
+		}
+
+		.page-bill .ui-txt-info .info{
+			font-size: 14px;
+		    color: #666;
+		    word-wrap: break-word;
+		    width:90%;
+		    white-space: nowrap;
+		    text-overflow: ellipsis;
+		    overflow: hidden;
+		}
+
+		.page-bill .ui-list-text .status{
+			position: absolute;
+			right:30px;
+			top:15px;
+			font-size:12px;
+			color:#00a5e0;
+		}
+
+		.page-bill .ui-nowrap .time{
+			font-size:13px;
+		}
+
+
+	
+		        /*覆盖*/
+        #J_PullLoading{
+            transition:opacity 0s ease;
+            /*transition: opacity .35s ease;*/
+        }
+
+	</style>
+</head>
+<body>
+
+	<div class="page-bill page wait" id="J_Page">
+
+		<div id="J_List">
+			<section class="ui-notice" id="J_NoData">
+                <i></i>
+                <p>没有账单记录</p>
+            </section>
+		</div>
+		<div class="loading small hidden" id="J_PullLoading"></div>
+	</div>
+
+	<!--#include file="/mods/head/footer.html"-->
+
+	<script>
+		seajs.use("pages/bill", function(){
+            seajs.use("libs/fastclick"); 
+        });
+	</script>
+</body>
+</html>

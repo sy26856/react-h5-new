@@ -1,0 +1,35 @@
+.report-doc {
+  font-family: PingFangSC-Medium;
+}
+.report-doc .report-tips {
+  background-color: #ebebeb;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  font-family: PingFangSC-Regular;
+  font-size: 13px;
+}
+.report-doc .phone-tips {
+  font-size: 14px;
+  padding: 15px 0;
+}
+.report-doc .sprite-phone {
+  width: 20px!important;
+  height: 30px;
+  background-image: url('images/report-doc/phone.png');
+  background-size: 100%;
+}
+.report-doc .sprite-password {
+  width: 20px!important;
+  height: 30px;
+  background-image: url('images/report-doc/password.png');
+  background-size: 100%;
+  min-width: 0;
+}
+.report-doc .doctProfe {
+  background-color: #0084ff;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 10px;
+  padding: 0 5px;
+  margin-left: 5px;
+}

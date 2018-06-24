@@ -1,0 +1,114 @@
+.doctor-card{
+  display:flex;
+  padding:10px;
+  background-color:#fff;
+  .ui-avatar{
+    width:65px;
+    height:65px;
+    span{
+      background-image:url(//image.yuantutech.com/user/6f221bf830a0cc369894fc49e83d0f02-100-100.png)
+    }
+  }
+
+  .doctor-info{
+    flex:1;
+    margin-left:10px;
+    p{
+      font-size:13px;
+      color:#303030;
+    }
+    p:last-child{
+      color:#999999;
+    }
+  }
+}
+
+.icon{
+  display: inline-block;
+  width:30px/2;
+  height:28px/2;
+  background-image:url(//image.yuantutech.com/user/0b9fe44de70bb959c22a9e28d0a35fec-36-32.png);
+  background-size:cover;
+  vertical-align:middle;
+  margin-right:3px;
+  margin-top:-4px;
+  &.techang{
+    background-image:url(//image.yuantutech.com/user/0b9fe44de70bb959c22a9e28d0a35fec-36-32.png);
+  }
+  &.jieshao{
+    background-image:url(//image.yuantutech.com/user/f6d5d85e434844e7026d1dc858f2c943-36-32.png);
+  }
+  &.paiban{
+    background-image:url(//image.yuantutech.com/user/996cd371ea8681128e691a35b44e26e4-36-32.png);
+  }
+}
+
+.scheduling-box{
+  padding: 0;
+  padding-top:10px;
+  padding-bottom:20px;
+  h1{
+    margin-left:10px;
+  }
+}
+
+.scheduling-scroll{
+  -webkit-overflow-scrolling : touch;
+  overflow-x: auto;
+  border:1px solid #3ec2f3;
+  border-width:1px 0;
+  margin-top:10px;
+}
+.scheduling-module{
+  width:440px;
+  margin-left:34px;
+  &.left{
+    position:absolute;
+    z-index:1;
+    width:34px;
+    height:131px;
+    background-color:#fff;
+    margin-top:1px;
+    margin-left:0;
+    .td:first-child{
+        width:66px/2;
+    }
+  }
+  .scheduling-row{
+    height:86px/2;
+    border-bottom:1px solid #e0e0e0;
+    // margin-left:34px;
+    &.head{
+      background-color:#f4f4f4;
+    }
+    .td{
+      height:100%;
+      width:86px/2;
+      float:left;
+      border-left:1px solid #e0e0e0;
+      text-align: center;
+      font-size:12px;
+      line-height:1.25em;
+
+      em{
+        display:block;
+        font-size:80%;
+        color:#000;
+      }
+    }
+
+    .td:last-child{
+      border-right:1px solid #e0e0e0;
+    }
+
+    a{
+      background-color:#3ec2f3;
+      color:#fff;
+    }
+  }
+
+  .scheduling-row:last-child{
+    border-bottom:none;
+  }
+
+}

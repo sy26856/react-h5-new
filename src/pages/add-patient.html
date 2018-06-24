@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include file="/mods/head/index.html"  data='{"spmb":"1502"}' -->
+    <title>就诊人</title>
+    <link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+
+    <style type="text/css">
+        .page-add-patient{
+            padding-bottom:70px;
+        }
+        .page-add-patient .ui-list li{
+
+            display:block;
+        }
+
+        .page-add-patient .delete-link{
+            text-align: center;
+            display: block;
+        }
+
+        .icon-ation-info {
+            display: inline-block;
+            background-image: url(//image.yuantutech.com/user/ab3d86555e44ca453c368c47516dac78-60-60.png);
+            width: 20px;
+            height: 20px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin-bottom: -5px;
+        }
+        .confirm-title {
+            margin-bottom: 9px;
+        }
+        .confirm {
+            margin-left: 20px;
+        }
+        .checkbox-name{
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="page-add-patient">
+
+
+        <div class="ui-tips  center">
+            最多添加5位就诊人
+        </div>
+
+        <div class="ui-form">
+
+
+        <div class="ui-form-item ui-form-item-show ui-border-tb">
+        <label for="idType">类型:</label>
+        <div class="ui-select">
+            <select id="idType">
+                <option value="1">成年人</option>
+                <option value="2">儿童</option>
+            </select>
+        </div>
+        </div>
+
+        <div class="ui-form-item ui-form-item-show  ui-border-b">
+        <label for="patientName">姓名:</label>
+        <input type="text" id="patientName" maxlength="20" placeholder="输入就诊人姓名" >
+        </div>
+
+
+        <div class="ui-form-item ui-form-item-show ui-border-b">
+        <label for="idNo">就诊人手机:</label>
+        <input type="number" value="" id="J_Phone"  placeholder="就诊人手机号码" >
+        </div>
+        <!--<div class="ui-form-item ui-form-item-switch ui-border-b" id="children" style="display:none;">-->
+            <!--<p class="checkbox-name">-->
+                <!--儿童身份证-->
+            <!--</p>-->
+            <!--<label class="ui-switch">-->
+                <!--<input type="checkbox" checked id="J_Children">-->
+            <!--</label>-->
+        <!--</div>-->
+        <div class="ui-form-item ui-border-b" id="sex" style="display:none;">
+            <label for="J_Sex">性别：</label>
+            <div class="ui-select">
+                <select id="J_Sex">
+                    <option value="1" elected>男</option>
+                    <option value="2" >女</option>
+                </select>
+            </div>
+        </div>
+        <div class="ui-form-item ui-border-b" id="J_Date" style="display:none;">
+            <label >出生日期</label>
+            <div class="ui-select-group">
+                <div class="ui-select">
+                    <select id="J_Year">
+                    </select>
+                </div>
+                <div class="ui-select">
+                    <select id="J_Month">
+                    </select>
+                </div>
+                <div class="ui-select">
+                    <select id="J_Day">
+
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="ui-form-item ui-form-item-show ui-border-b" id="J_idNo">
+            <label for="idNo">身份证:</label>
+            <input type="text" value="" id="idNo" maxlength="25"  placeholder="请输入证件号码" >
+        </div>
+
+        <div class="ui-form-item ui-form-item-show ui-border-b" id="J_GuarderIdNoInput" style="display:none;">
+            <label for="guarderIdNo">监护人证件:</label>
+            <input type="text" value="" id="guarderIdNo" maxlength="25" placeholder="监护人身份证">
+        </div>
+        <div class="ui-form-item ui-form-item-switch ui-border-b">
+            <p class="checkbox-name">
+                设为默认就诊人
+            </p>
+            <label class="ui-switch">
+                <input type="checkbox"  id="J_Default">
+            </label>
+        </div>
+        
+        <!--第三方卡片模块-->
+        <div id="J_PatientCard" style="margin-top:10px;"></div>
+        
+
+        <!--<div class="ui-tips center hide" id="J_BindCardTip">添加就诊人后可绑定就诊卡</div>-->
+        <div class="confirm ui-tips" id="J_BindCardTip">
+            <div class="confirm-title">
+                <span class="icon-ation-info"></span>
+                <span >温馨提示：</span>
+            </div>
+            <!--<ul>-->
+                <!--<li>1. 就诊人姓名、身份证号将用于医院建档信息匹配，请输入正确的就诊人姓名和身份证号；</li>-->
+                <!--<li>2.添加就诊人后预约，取号时需使用与此处填写的就诊人身份证号和姓名相匹配的就诊卡，否则无法取号；</li>-->
+                <!--<li>3.无身份证儿童请选择“儿童”类型添加就诊人。</li>-->
+            <!--</ul>-->
+        </div>
+
+
+
+        <div class="ui-footer ui-footer-stable ui-btn-group ui-border-t">
+            <button class="ui-btn-lg ui-btn-danger hide" id="J_DeleteBtn">
+                删除就诊人
+            </button>
+
+            <button class="ui-btn-lg ui-btn-primary" id="J_SubmintBtn">
+                确定
+            </button>
+        </div>
+
+
+
+    </div>
+    <!--#include file="/mods/head/footer.html"-->
+
+    <script >
+        seajs.use(["pages/add-patient","pages/patient-card"], function(){
+//            seajs.use("libs/fastclick");
+        })
+    </script>
+
+</body>
+</html>

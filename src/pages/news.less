@@ -1,0 +1,112 @@
+
+.page-news{
+	
+	.h5-plugin-tab{
+		position: fixed;
+		z-index:50;
+		width:100%;
+	}
+	.news-nav{
+		line-height:3em;
+		background-color:#fff;
+		position:fixed;
+		width:100%;
+		z-index:50;
+		box-shadow: 0px 1px 5px #ccc;
+		overflow-x: auto;
+		ul{
+			display: block;
+			white-space: nowrap;
+		}
+
+		li{
+			float: left;
+			padding:0 1em;
+			// flex:1;
+			text-align: center;
+			position: relative;
+			&:after{
+				position:absolute;
+				border-right:1px dotted #ccc;
+				content:"";
+				display: block;
+				width:1px;
+				height:60%;
+				top:20%;
+				right:0;
+			}
+
+			&.active{
+				border-bottom:1px solid #f30;
+			}
+		}
+
+		li:last-child{
+			&:after{
+				display: none;
+			}
+		}
+	}
+
+	.news-list{
+		padding-top:50px;
+	}
+	.item-news{
+		position: relative;
+		a{
+			color: #303030;
+			display:block;
+			padding:10px 0;
+			background-color:#fff;
+		}
+
+		a:active{
+			background-color:#f1f1f1;
+		}
+		.img{
+			width:100px;
+			height:80px;
+			margin-left:10px;
+			position: absolute;
+			background-color:#f8f8f8;
+			background-image:url(//s.yuantutech.com/i4/7939b31ce29486aa70e7ec2c8f5dc29f.jpg);
+			background-position: center center;
+			background-size:cover;
+
+		}
+
+		.text{
+			margin-left:120px;
+			height:80px;
+		}
+
+		.h1{
+			overflow: hidden;
+			max-height:2.6em;
+			line-height:1.3em;
+			font-size:16px;
+		  	color: #303030;
+		}
+
+		.sub{
+			color:#888888;
+			margin-top:5px;
+			font-size:13px;
+			line-height:1.4em;
+			max-height:1.4em;
+			overflow: hidden;
+			margin-right:15px;
+		}
+
+		.time{
+			position: absolute;
+			font-size:12px;
+			right:15px;
+			bottom:10px;
+			color:#ccc;
+		}
+	}
+
+
+
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include file="/mods/head/index.html"  data='{"spmb":"1520"}' -->
+    <title>健康档案</title>
+    <link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+    <style>
+        .item{
+            margin:10px 0;
+        }
+
+        .item .time{
+            font-size:12px;
+            padding-left:10px;
+        }
+
+        .item a{
+            display: block;
+            color:#999;
+            background-color:#fff;
+            font-size:14px;
+            padding:10px;
+        }
+        .item h1{
+            font-size:16px;
+            color:#000;
+        }
+        .item h3{
+            font-size:14px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="page-health-list page">
+
+        <a href="health-record.html?target=_blank" class="ui-center-link ui-border-tb">手动添加健康数据</a>
+        
+        <div  id="J_Page"  class="page wait">
+            <div id="J_List">
+                <section class="ui-notice" id="J_NoData">
+                    <i></i>
+                    <p>还没有健康数据</p>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <!--#include file="/mods/head/footer.html"-->
+
+    <script >
+        seajs.use("pages/health-record-list", function(){
+            seajs.use("libs/fastclick"); 
+        });
+    </script>
+
+</body>
+</html>

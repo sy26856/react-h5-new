@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--#include file="/mods/head/index.html"  data='{"spmb":"3010"}' -->
+    <title>意见反馈</title>
+	<link rel="stylesheet" type="text/css" href="../../component/frozen.less.css">
+    <link rel="stylesheet" href="feedback-query.less.css">
+</head>
+<body>
+    <div class="feedback-query-list">
+        <a class="ui-center-link ui-border-tb" id="J_AddFeedBack" href="feedback.html?target=_blank">
+                提交反馈信息
+        </a>
+        <div class="page wait" id="J_Page">
+            <div id="J_List">
+                <section class="ui-tips center" >
+                    点击 <a href="feedback.html?target=_blank">提交反馈</a>，客服第一时间为你解答
+                </section> 
+            </div>
+        </div>
+    </div>
+	<!--#include file="/mods/head/footer.html"-->
+
+    <script >
+        seajs.use("pages/about/feedback-query", function(){
+            seajs.use("libs/fastclick"); 
+        });
+    </script>
+
+</body>
+</html>

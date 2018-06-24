@@ -1,0 +1,170 @@
+/*覆盖*/
+#J_PullLoading{
+  transition:opacity 0s ease;
+  /*transition: opacity .35s ease;*/
+}
+.my-reservation {
+  .page-reservation .ui-list{
+    margin-bottom: 10px;
+  }
+  .page-reservation .ui-list h4{
+    color:#000;
+  }
+
+  .page-reservation .ui-list h5{
+    margin-top:3px;
+    padding-top:2px;
+  }
+
+  .ui-list .rmb{
+    color:#000;
+  }
+
+  .ui-list .rmb,.ui-list .status{
+    float: right;
+  }
+
+  .ui-list .rmb .y{
+    font-size:70%;
+  }
+
+  .ui-tips{
+    margin:10px 0 20px 0;
+  }
+
+
+
+  .tag{
+    border:1px solid #ffad35;
+    /*box-shadow:0 0 1px #ffad35;*/
+    color:#ffad35;
+    font-size:80%;
+    padding:1px 4px;
+    margin-right:3px;
+    border-radius:4px;
+  }
+
+  .ui-notice {
+    -webkit-box-pack: inherit;
+    position: static;
+    margin: 20px 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: center;
+    text-align: center;
+    i {
+      display: block;
+      margin-bottom: 20px;
+    }
+    i:before {
+      font-family: iconfont!important;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-stroke-width: .2px;
+      display: block;
+      content: "";
+      font-size: 100px;
+      line-height: 100px;
+      color: rgba(0, 0, 0, 0.3);
+    }
+    p {
+      font-size: 16px;
+      line-height: 20px;
+      color: #bbb;
+      text-align: center;
+      padding: 0 15px;
+    }
+  }
+
+  .status-list {
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+    height: 55px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+    .status-item {
+      width: 25%;
+      height: 100%;
+      text-align: center;
+      line-height: 55px;
+      float: left;
+      position: relative;
+      span {
+        display: inline-block;
+        margin: auto;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      .unread-num {
+        min-width: 16px;
+        height: 16px;
+        line-height: 16px;
+        background: #F15A4A;
+        border-radius: 8px;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        position: absolute;
+        top: 9px;
+        left: 55%;
+        transform: translate(1.25em);
+      }
+    }
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+      width: 0;
+    }
+  }
+
+  .appoint-modal {
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .appoint-modal-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+  }
+
+  .reservation-modal-header {
+    background-color: #fff;
+    overflow: auto;
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+      width: 0;
+    }
+    div {
+      text-align: center;
+      line-height: 46px;
+      font-size: 15px;
+    }
+    .reservation-modal-header-cancel {
+      float: left;
+      width: 70px;
+      color: #999;
+      font-size: 14px;
+    }
+    .reservation-modal-header-confirm {
+      float: right;
+      width: 70px;
+      color: #76acf8;
+      font-size: 14px;
+    }
+  }
+}

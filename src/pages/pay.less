@@ -1,0 +1,71 @@
+
+.page-pay .status{
+    text-align: center;
+    padding:20px 0 10px 0;
+}
+
+.transition{
+	transition:all .3s ease;
+	// transition:all .3s cubic-bezier(0.4, 0, 0.2, 1)
+	&.hidden{
+		height:0px;
+		padding-top:0;
+		padding-bottom:0px;
+	}
+}
+
+.ui-list{
+	.active{
+		background-color:#f8f8f8 !important;
+	}
+}
+
+.page-pay .ui-list-action{
+	font-size:14px;
+}
+.pay-list{
+	li{
+		margin-bottom:5px;
+	}
+	li:last-child{
+		margin-bottom:0px;
+	}
+	.price{
+		float:right;
+	}
+}
+
+.pay-all-cost {
+	float: right;
+	color: red;
+	font-weight: bold;	
+}
+
+.y{
+	font-size:60%;
+}
+
+
+.ui-form-item-address{
+	height:88px;
+	overflow: hidden;
+	padding-bottom:5px;
+	.address{
+		line-height:1.5em;
+		padding-top:40px;
+		font-size:14px;
+		.text{
+			background-color:#f8f8f8;
+			margin-bottom:5px;
+			margin-left:-15px;
+			margin-right:-15px;
+			padding:7px 25px;
+    		line-height: 1.25em;
+    		color:#000;
+    		min-height:2.5em;
+			display:flex;
+			align-items: center;
+		}
+
+	}
+}

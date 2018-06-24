@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--#include file="/mods/head/index.html"  data='{"spmb":"1705"}' -->
+<title>住院充值</title>
+	<link rel="stylesheet" type="text/css" href="../../component/frozen.less.css">
+	<style type="text/css">
+		.page-recharge{
+			padding-top:20px;
+		}
+
+		.recharge-container {
+			overflow: hidden;
+			width: 100%;
+			box-sizing: border-box;
+			padding: 15px;
+			background-color: #fff;
+			margin-top: 10px;
+		}
+
+		.recharge-title {
+			color: #666;
+			font-size: 14px;
+		}
+
+		.recharge-container > span {
+			font-size: 28px;
+			color: #333;
+		}
+
+		.recharge-container > input {
+			height: 40px;
+			font-size: 28px;
+			color: #999;
+			width: 260px;
+			border: none;
+		}
+
+		.patient-list-container {
+			z-index: 999;
+			display: none;
+			position: fixed;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+
+		.patient-list-main {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 300px;
+			background-color: #fff;
+		}
+		.patient-list-title {
+			padding: 0 15px;
+			height: 50px;
+			line-height: 50px;
+			color: #666;
+			box-sizing: border-box;
+			border-bottom: 1px solid #eee;
+		}
+		.patient-list {
+			overflow: auto;
+			height: 250px;
+		}
+		.patient-list > div {
+			margin-left: 15px;
+			border-bottom: 1px solid #eee;
+			padding: 15px 15px 15px 0;
+		}
+		.patient-list > div:after {
+			content: "";
+			display: block;
+			clear: both;
+			width: 0;
+		}
+		.patient-list-avatar {
+			float: left;
+			width: 34px;
+		}
+		.patient-list-item {
+			margin-left: 45px;
+		}
+		.patient-list-name {
+			margin-top: -2px;
+			font-size: 14px;
+			color: #333;
+		}
+		.patient-list-name > span {
+			color: #76acf8;
+			border: 1px solid #76acf8;
+			border-radius: 2px;
+			font-size: 12px;
+			margin-left: 2px;
+			padding: 1px 3px;
+		}
+		.patient-list-brief {
+			font-size: 12px;
+			color: #999;
+		}
+		.patient-notice, bind-notice {
+			border: none !important;
+			margin-top: 30px;
+		}
+		.patient-notice > span, .bind-notice > span {
+			background: url("https://front-images.oss-cn-hangzhou.aliyuncs.com/i4/1439e07f870be79f496905a267235530-120-120.png") no-repeat;
+			background-size: cover;
+			display: block;
+			width: 60px;
+			height: 60px;
+			margin: 0 auto 10px;
+		}
+		.patient-notice > span {
+			background-image: url("https://front-images.oss-cn-hangzhou.aliyuncs.com/i4/1439e07f870be79f496905a267235530-120-120.png");
+		}
+		.bind-notice > span {
+			background-image: url("https://front-images.oss-cn-hangzhou.aliyuncs.com/i4/3ec1ac7a4735dc605f21ba8583737d75-120-120.png");
+		}
+		.patient-notice > p, .bind-notice > p {
+			text-align: center;
+			color: #999;
+			font-size: 14px;
+		}
+		.recharge-select {
+			position: relative;
+			margin-left: 95px;
+			margin-right: 6px;
+		}
+		.recharge-select > div {
+			text-align: right;
+			color: #333;
+		}
+		.close-container {
+			color: #858585;
+			position: absolute;
+			right: 10px;
+			top: 0px;
+			display: block;
+			font-size: 20px;
+			padding-right: 10px;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			text-align: right;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!--充值-->
+	<div class="page-recharge">
+		<div class="ui-form ui-border-tb">
+			<div class="ui-form-item ui-form-item-show ui-border-b">
+				<label>就诊人:</label>
+				<div class="recharge-select">
+					<div id="J_PatientSelect">请选择就诊人</div>
+				</div>
+			</div>
+			<div class="ui-form-item ui-form-item-show ui-border-b">
+				<label for="">账户余额:</label>
+				<input type="text" id="J_Balance" style="text-align: right" value="0 元" readonly>
+			</div>
+		</div>
+
+		<div class="recharge-container">
+			<p class="recharge-title">充值金额:</p>
+			<span>¥</span>
+			<input type="number" style="color: #333" id="J_recharge_money" value="0.01">
+		</div>
+
+
+		<!--#include file="/mods/pay/index.html"-->
+
+		<div class="patient-list-container" id="patientList">
+			<div class="patient-list-main">
+				<div class="patient-list-title">
+					选择需要操作的就诊人
+					<span class="close-container">×</span>
+				</div>
+				<div class="patient-list">
+
+				</div>
+			</div>
+		</div>
+
+
+		<!--#include file="/mods/pay/index.html"-->
+
+
+
+		<div class="ui-btn-wrap">
+			<div class="ui-tips center hide" id="J_Tips">就诊人未建档，不能充值</div>
+			<button class="ui-btn-lg ui-btn-primary  hide" id="J_Submit">确定充值</button>
+
+		</div>
+
+	</div>
+
+	<!--#include file="/mods/head/footer.html"-->
+
+	<script>
+		seajs.use("pages/hospitalize/recharge", function(){
+        seajs.use("libs/fastclick");
+    })
+	</script>
+
+</body>
+
+</html>

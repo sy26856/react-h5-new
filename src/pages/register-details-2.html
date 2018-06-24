@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include file="/mods/head/index.html"  data='{"spmb":"1101"}' -->
+    <title>详情</title>
+    <link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+    <link rel="stylesheet" type="text/css" href="/??pages/register-details-2.less,component/y-ui-btn.less.css,mods/page-top-tip/index.less.css">
+</head>
+<body>
+    <div class="page-register-details">
+        <div id="J_TopTip"></div>
+        <div class="page" id="J_Page">
+            <!--详情-->
+            <div id="J_DetailInfo">
+
+            </div>
+
+            <!--如果是线上问诊的需要显示处方-->
+            <div id="J_PrescribedReport"></div>
+
+            <!--#include file="/mods/condition/index.html"-->
+
+            <div id="J_PayForm" class="hide">
+                <ul class="ui-list ui-list-text  ui-border-tb hide" id="J_ShowCost">
+                    <li class="ui-border-t">
+                        <h4 class="ui-nowrap">费用 
+                            <span class="cost">
+                                <span class="y">￥</span>
+                                <span id="J_Cost">0</span>
+                            </span>
+                        </h4>
+                    </li>
+                </ul>
+                <!--#include file="/mods/pay/index.html"-->
+
+            </div>
+        </div>
+
+        <div class="y-ui-footer y-ui-flex">
+            <button class="y-ui-btn danger hide" id="J_Esc">取消订单</button>
+            <button class="y-ui-btn hide" id="J_Pay">确认</button>
+            <a class="y-ui-btn hide" id="J_GoNetWorkClinic">进入网络诊间</a>
+        </div>
+    </div>
+    <!--#include file="/mods/head/footer.html"-->
+
+    <script>
+        seajs.use(["pages/register-details-2","mods/condition/index"], function(){
+            seajs.use("libs/fastclick");
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--#include file="/mods/head/index.html"  data='{"spmb":"1711"}' -->
+    <title>全部医生/科室</title>
+    <link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+    <style>
+      .J_Banner {
+        position: relative;
+        height: 44px;
+        background-color: #ececec;
+      }
+      .J_Banner div{
+          position: absolute;
+          text-align: center;
+      }
+      .J_Banner div:nth-child(1) {
+        width: 20%;
+        height: 44px;
+        z-index: 9;
+      }
+      .J_Banner div:nth-child(2) {
+        line-height: 44px;
+        top: 0;
+        left: 0%;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+      }
+      .search-result > div {
+        margin-top: 20px;
+      }
+      .search-result li {
+        padding: 5px;
+        font-size: 14px;
+      }
+      .search-result div.name {
+        font-size: 16px;
+      }
+      .search-result div.label {
+        padding-top: 2px;
+        font-size: 13px;
+        color: #303030;
+      }
+      .search-result div.corp-name {
+        font-size: 11px;
+        color: #83828a;
+        padding-top: 0px;
+      }
+      .search-result .img {
+        width: 63px;
+        height: 63px;
+        background-color: white;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .search-result .img-doct {
+        background-image: url(https://image.yuantutech.com/user/6f221bf830a0cc369894fc49e83d0f02-100-100.png);
+      }
+      .search-result .img-dept {
+        background-image: url(https://image.yuantutech.com/user/b3520edbaa903e5492a819ec5542ecbb-130-130.png);
+      }
+      .search-result .content {
+        margin-left: 15px;
+        width: 70%;
+      }
+      .search-result a {
+        color: black;
+      }
+      #hold {
+        filter:alpha(opacity=0);
+        -moz-opacity:0;
+        -khtml-opacity: 0; 
+        opacity: 0;
+      }
+    </style>
+</head>
+<body>
+  
+  <div>
+    <div id="J_Page">
+      
+    </div>
+  </div>
+
+  <!--#include file="/mods/head/footer.html"-->
+
+  <script>
+    seajs.use("pages/search-detail", function(){
+        seajs.use("libs/fastclick");
+    });
+  </script>
+</body>
+</html>

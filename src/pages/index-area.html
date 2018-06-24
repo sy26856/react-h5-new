@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--#include file="/mods/head/index.html"  data='{"spmb":"1000"}' -->
+    <title>慧医</title>
+	<link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+	<link rel="stylesheet" href="index-area.less">
+	<script type="text/javascript">
+		var areaTitle = {
+			"29":"青岛市卫生计生委",
+			"60":"番禺智慧医疗"
+		};
+
+		var unionId = location.href.match(/unionId=(\d+)/);
+		if(unionId && unionId[1]){
+			document.title = areaTitle[unionId[1]] || "慧医";
+		}
+	</script>
+</head>
+<body>
+	<div class="page wait" id="J_Page">
+		<div class="slider" >
+		  <div class="slide-items" id="J_Slide" >
+		    <div class="slider-slides" data-index="0" style="margin-left:0%">
+		    </div>
+		  </div>
+		  <div class="slider-pager" id="J_SlidePaper">
+
+		  </div>
+		</div>
+		<div class="drop-list" id="J_List">
+
+		</div>
+
+	</div>
+
+	<!--#include file="/mods/head/footer.html"-->
+
+	<script id="J_YuanTuLastScript">
+		seajs.use("pages/index-area", function(){
+            seajs.use("libs/fastclick");
+        });
+	</script>
+</body>
+</html>

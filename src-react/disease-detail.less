@@ -1,0 +1,83 @@
+.disease-detail-container {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.disease-detail-block {
+  margin-bottom: 30px;
+  h2 {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  p, strong, span {
+    color: #999;
+    font-size: 14px;
+  }
+}
+
+.disease-up-block, .disease-catalog {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  border-radius: 5px;
+  border: 1px solid #76acf8;
+  z-index: 2;
+  right: 15px;
+  background-color: #fff;
+  color: #76acf8;
+  opacity: 0.8;
+
+  display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box; /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox; /* 混合版本语法: IE 10 */
+  display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.disease-up-block {
+  bottom: 160px;
+  img {
+    width: 25px;
+  }
+}
+
+.disease-catalog {
+  bottom: 80px
+}
+
+.slide-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slide-content {
+  width: 240px;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 40px;
+  position: absolute;
+  right: -240px;
+  background-color: #fff;
+  a {
+    box-sizing: border-box;
+    display: block;
+    padding: 15px 25px;
+    color: #333;
+
+    &:hover {
+      background: #F9F9F9;
+    }
+  }
+}

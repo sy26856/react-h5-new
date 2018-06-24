@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include file="/mods/head/index.html"  data='{"spmb":"1601"}'-->
+    <title>消息中心</title>
+    <link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+    <link rel="stylesheet" href="message-list.less">
+</head>
+<body>
+
+<div class="page" id="J_Page">
+    <div id="J_Content">
+        <a class="msg-type-item ui-border-tb" id="item-1" href="message-type-list.html?messageType=1&target=_blank">
+            <div>
+                <div class="icon"
+                     style="background-image:url(//s.yuantutech.com/i4/3b6dc1fb6911f00c9fbb5aafd16b9a95-92-92.png)"></div>
+                <div class="info">
+                    <div class="msg-title">就诊提醒</div>
+                    <div class="msg-date" id="date-1">...</div>
+                    <div class="msg-body">
+                        <p class="ui-nowrap-flex" style="height: 13px;" id="msg-1">无信息</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="msg-type-item ui-border-tb" id="item-2" href="message-type-list.html?messageType=2&target=_blank">
+            <div>
+                <div class="icon"
+                     style="background-image:url(//s.yuantutech.com/i4/2f6482afa9b26707a474966986e18b4b-92-92.png)"></div>
+                <div class="info">
+                    <div class="msg-title">住院服务</div>
+                    <div class="msg-date" id="date-2">...</div>
+                    <div class="msg-body">
+                        <p class="ui-nowrap-flex" style="height: 13px;" id="msg-2">无信息</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="msg-type-item ui-border-tb" id="item-3" href="message-type-list.html?messageType=3&target=_blank">
+            <div>
+                <div class="icon"
+                     style="background-image:url(//s.yuantutech.com/i4/281aae615f0f1d153eece60364fce11f-92-92.png)"></div>
+                <div class="info">
+                    <div class="msg-title">充值缴费提醒</div>
+                    <div class="msg-date" id="date-3">...</div>
+                    <div class="msg-body">
+                        <p class="ui-nowrap-flex" style="height: 13px;" id="msg-3">无信息</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="msg-type-item ui-border-tb" id="item-4" href="message-type-list.html?messageType=4&target=_blank">
+            <div>
+                <div class="icon"
+                     style="background-image:url(//s.yuantutech.com/i4/fc4620a79e482e061d57278d74306943-92-92.png)"></div>
+                <div class="info">
+                    <div class="msg-title">慧医活动</div>
+                    <div class="msg-date" id="date-4">...</div>
+                    <div class="msg-body">
+                        <p class="ui-nowrap-flex" style="height: 13px;" id="msg-4">无信息</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="msg-type-item ui-border-tb" id="item-40" href="message-type-list.html?messageType=40&target=_blank">
+            <div>
+                <div class="icon"
+                     style="background-image:url(//image.yuantutech.com/user/32e028fe11e07bddcbe9199effcacc5b-84-84.png)"></div>
+                <div class="info">
+                    <div class="msg-title">排队叫号提醒</div>
+                    <div class="msg-date" id="date-40">...</div>
+                    <div class="msg-body">
+                        <p class="ui-nowrap-flex" style="height: 13px;" id="msg-40">无信息</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="ui-notice hide" id="J_NoData">
+            <i></i>
+            <p>没有消息</p>
+        </div>
+    </div>
+</div>
+
+
+<!--#include file="/mods/head/footer.html"-->
+
+<script>
+    seajs.use("pages/message-list", function () {
+        seajs.use("libs/fastclick");
+    });
+</script>
+</body>
+</html>

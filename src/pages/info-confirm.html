@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include file="/mods/head/index.html"  data='{"spmb":"1005"}' -->
+    <title>信息确认</title>
+    <link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+    <link rel="stylesheet" type="text/css" href="../component/y-ui-btn.less.css">
+    <link rel="stylesheet" type="text/css" href="../mods/page-top-tip/index.less.css">
+    <style type="text/css">
+        .page-info-success .ui-form h2{
+            color:#ff7800;
+            text-align: center;
+            line-height:3em;
+        }
+    
+        .page-info-success .des{
+            font-size:12px;
+            margin:0px 12px;
+            color:#666;
+        }
+        
+        .page-info-confirm{
+            padding-top:10px;
+        }
+        .page-info-confirm .rule{
+            padding:10px;
+            font-size:14px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!--信息确认-->
+    <div id="J_TopTip"></div>
+    <div class="page-info-confirm" id="J_InfoConfim">
+        <div class="ui-form ui-border-tb ui-label2word">
+            <div class="ui-form-item ui-form-item-show  ui-border-b">
+                <label for="J_dropName">医院:</label>
+                <input type="text" value="-" id="J_dropName" readonly >
+            </div>
+            <div class="ui-form-item ui-form-item-show  ui-border-b">
+                <label for="J_deptName">科室:</label>
+                <input type="text" value="-" id="J_deptName" readonly>
+            </div>
+            <div class="ui-form-item ui-form-item-show  ui-border-b" id="J_DoctorItem">
+                <label for="J_doctorName">医生:</label>
+                <input type="text" value="-"  id="J_doctorName" readonly>
+            </div>
+            <div class="ui-form-item ui-border-b ui-form-item-show hide" id="J_ShowRegAmount">
+                <label for="J_Date">费用:</label>
+                <input type="text" value="-" id="J_RegAmount" readonly>
+            </div> 
+            <div class="ui-form-item ui-form-item-show">
+                <label for="J_Date">日期:</label>
+                <input type="text" value="-" id="J_Date" readonly>
+            </div>   
+               
+                
+        </div>
+
+        <div class="ui-form ui-border-tb">
+
+
+            <div class="ui-form-item ui-form-item-show ui-border-b" id="J_SourceSelect">
+                <label for="J_regNoList">选择号源:</label>
+                <div class="ui-select">
+                    <select id="J_regNoList">
+                        <option value=",,,">加载中...</option>
+                    </select>
+                </div>
+            </div>
+
+            <a   href="patient-list.html?selectView=1&target=_blank">
+            <div class="ui-form-item ui-form-item-show ui-form-item-link">
+                <label for="J_PatientName">就诊人:</label>
+                <input type="text" placeholder="点击选择就诊人" id="J_PatientName" readonly>
+            </div>
+            </a>
+
+            
+        </div>
+
+        <!--#include file="/mods/condition/index.html"-->
+
+        <div class="ui-tips center">
+            <a href="../rule.html?target=_blank">请遵守平台预约挂号规则</a>
+        </div>
+        
+        <div class="y-footer-placehold"></div>
+        <div class="y-ui-footer y-ui-flex">
+            <button class="y-ui-btn" id="J_Submit">确认</button>
+        </div>
+
+    </div>
+       
+    
+        <div class="ui-actionsheet">  
+          <div class="ui-actionsheet-cnt">
+            <h4>请选择就诊日期</h4> 
+            <button>2012-10-10</button>
+            <button>2012-10-10</button> 
+            <button>2012-10-10</button>
+            <button>取消</button> 
+          </div>         
+        </div>
+    </div>
+
+    
+
+    <!--#include file="/mods/head/footer.html"-->
+
+    <script>
+        seajs.use(["pages/info-confirm","mods/condition/index","mods/register-token/index"]);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+.info-29_container {
+  font-family: PingFangSC-Regular;
+}
+.info-29_container .uat-spv-view {
+  line-height: 3em;
+  background-color: #f30;
+  color: #fff;
+  text-align: center;
+}
+.info-29_container .app-confir .msg-rules {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+}
+.info-29_container .list-pay-msg {
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 46px;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 0 14px;
+}
+.info-29_container .list-pay-msg .item-right {
+  float: right;
+}
+.info-29_container #listItems .list .item {
+  width: 45px;
+}
+.info-29_container .selectPatient:before {
+  width: 0;
+  height: 0;
+  content: '';
+}
+.info-29_container .li_selectPatient {
+  position: relative;
+}
+.info-29_container #gotoList {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  text-align: center;
+  color: #fff;
+  line-height: 28px;
+  background-color: #429fff;
+  border-radius: 5px;
+  padding: 0 2px;
+  font-size: 12px;
+}
+.info-29_container #infoShow {
+  margin-left: 0;
+  padding-left: 15px;
+}
+.info-29_container #infoShow span {
+  display: block;
+  height: 28px;
+  line-height: 28px;
+}
+.info-29_container #infoShow:before {
+  width: 0px;
+  height: 0px;
+  content: '';
+}
+.info-29_container .selectTime {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+}
+.info-29_container .payStyle {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+.info-29_container #patientTime {
+  border: none;
+}
+.info-29_container .space {
+  width: 100%;
+  height: 10px;
+  background-color: #F0F0F0;
+}
+.info-29_container .confirm {
+  position: fixed;
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: #fff;
+  padding: 0;
+  border-top: 1px solid #b2b2b2;
+}
+.info-29_container .confirmBtn {
+  flex: 1;
+  background-color: #429fff;
+  color: #fff;
+}
+.info-29_container .pay-info {
+  width: 70%;
+  display: flex;
+}
+.info-29_container .discount,
+.info-29_container .notDiscount {
+  width: 50%;
+  text-align: center;
+}
+.info-29_container .notDiscount {
+  display: flex;
+}
+.info-29_container .cost {
+  width: 60%;
+  font-size: 20px;
+  color: #ff5256;
+}
+.info-29_container .mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+.info-29_container .cancel {
+  color: #999;
+}
+.info-29_container .isConfirm {
+  text-align: center;
+  color: #429fff;
+}
+.info-29_container .patientTime {
+  color: #666;
+}
+.info-29_container .list-ord {
+  border-bottom: none;
+  box-sizing: border-box;
+}
+.info-29_container .list-label-wrapper .list-item {
+  border: none;
+  border-bottom: 1px solid #eee;
+  margin-left: 0px;
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+.info-29_container .sourceList-item-overflow .selectSourceItem:nth-of-type(3n-1) {
+  margin-left: 2%!important;
+  margin-right: 2%!important;
+}

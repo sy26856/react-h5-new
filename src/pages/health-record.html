@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include file="/mods/head/index.html"  data='{"spmb":"1521"}' -->
+    <title>健康档案</title>
+    <link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+</head>
+<body>
+    
+    <div>
+        <div class="ui-tips center">记录健康数据</div>
+        <div class="ui-form ui-label2word ui-border-tb" >
+            
+            <div class="ui-form-item ui-form-item-show  ui-border-b">
+                <label for="J_Pwd">就诊人:</label>
+                <div class="ui-select">
+                    <select id="J_Patient">
+                        <option>加载中...</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="ui-form-item ui-form-item-show  ui-border-b">
+                <label for="J_Pwd">体重:</label>
+                <input type="number" value="" id="J_kg"  placeholder="体重(kg)">
+            </div>
+
+            <div class="ui-form-item ui-form-item-show  ui-border-b">
+                <label for="J_Pwd">收缩压:</label>
+                <input type="number" value="" id="J_mmkg1" placeholder="收缩压(mmHg)">
+            </div>
+
+            <div class="ui-form-item ui-form-item-show  ui-border-b">
+                <label for="J_Pwd">舒张压:</label>
+                <input type="number" value="" id="J_mmkg2" placeholder="舒张压(mmHg)">
+            </div>
+
+            <div class="ui-form-item ui-form-item-show  ui-border-b">
+                <label for="J_Pwd">血糖:</label>
+                <input type="number" value="" id="J_mmol" placeholder="血糖(mmol)">
+            </div>
+
+            <div class="ui-form-item ui-form-item-show  ui-border-b">
+                <label for="J_Pwd">血脂:</label>
+                <input type="number" value="" id="J_mmoll" placeholder="血脂(mmol/L)">
+            </div>
+
+        </div>
+
+        <div class="ui-btn-wrap">
+            <button class="ui-btn-lg ui-btn-primary" id="J_Submit">
+                保存健康数据
+            </button>
+        </div>
+
+         <div class="ui-tips center">健康数据也可通过线下“健康管理自助服务终端”检查上传</div>
+
+    </div>
+
+    <!--#include file="/mods/head/footer.html"-->
+
+    
+    <script >
+        seajs.use("pages/health-record", function(){
+            seajs.use("libs/fastclick"); 
+        });
+    </script>
+
+</body>
+</html>

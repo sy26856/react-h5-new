@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include file="/mods/head/index.html"  data='{"spmb":"1702"}' -->
+    <title>查看就诊卡</title>
+    <link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+    <style type="text/css">
+
+        .page{
+            padding-top:20px;
+        }
+        .about-faq{
+            font-size:80%;
+            margin:20px;
+            line-height:1.5em;
+        }
+
+        .about-faq h2{
+            margin-top: 10px;
+            color:#303030
+        }
+        .about-faq p{
+            margin-top: 10px;
+            color:#888;
+            text-indent:2em;
+        }
+
+        .change-new-card{
+            position: absolute;
+            right:0px;
+            top:17px;
+            padding-right:30px;
+        }
+
+        .yu-e{
+            margin-bottom:5px !important;
+            margin-top:5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page wait" id="J_Page">
+
+        <!--就诊卡模块-->
+        <div class="" id="J_PatientCard">
+
+        </div>
+
+        
+        <div class="ui-footer ui-footer-stable ui-btn-group ui-border-t">
+            <button class="ui-btn-lg ui-btn-primary" id="J_BindNewCard">
+                绑定新卡片
+            </button>
+        </div>
+
+
+        <div class="about-faq hide" id="J_CardQA">
+
+            <h2>番禺民生卡有什么好处?</h2>
+            <p>
+                民生卡作为番禺区政府为广东省全员信息库的番禺区民生档
+                案人员免费发行的政府服务卡，在卫生医疗领域，持卡人可
+                通过番禺区卫生医疗机构的银医通自助终端，实现自助发卡
+                自助挂号、自助缴费（含医保自助结算）、自助打印检验报告
+                等功能，在民生卡的身份认证和资金结算中完成整个就医流
+                程，并能够在区内所有卫生医疗机构实现一卡通。
+            </p>
+
+            <h2>如何申请民生卡？</h2>
+
+            <p>
+                请拨打民生卡客服热线:400-834-116或者访问民生卡网站 //www.xhjk.com.cn 了解详情
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!--#include file="/mods/head/footer.html"-->
+
+    <script>
+        seajs.use("pages/patient-card-detail", function(){
+            seajs.use("libs/fastclick");
+        });
+    </script>
+</body>
+</html>

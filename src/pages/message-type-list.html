@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include file="/mods/head/index.html"  data='{"spmb":"1600"}' -->
+    <title>消息</title>
+    <link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+    <link rel="stylesheet" href="message-type-list.less">
+</head>
+<body>
+<div class="page wait" id="J_Page">
+    <div>
+        <ul id="J_Content" class="msg-list">
+            <li class="ui-notice">
+                <i></i>
+                <p>没有消息</p>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+<!--#include file="/mods/head/footer.html"-->
+
+<script>
+    seajs.use("pages/message-type-list", function () {
+        seajs.use("libs/fastclick");
+    });
+</script>
+</body>
+</html>

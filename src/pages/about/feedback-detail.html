@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--#include file="/mods/head/index.html"  data='{"spmb":"3011"}' -->
+    <title>反馈详情</title>
+	<link rel="stylesheet" type="text/css" href="../../component/frozen.less.css">
+</head>
+<style>
+    .page{
+        padding-bottom: 58px;
+    }
+    .ui-txt-info{
+        padding-top: 10px;
+    }
+    .ui-btn-wrap{
+        width:94%;
+    }
+    #reply-box{
+        width:100%;
+        margin-top: 50px;
+        position: fixed;
+        bottom: 0;
+        background-color: #f8f8f8;
+        z-index: 3;
+        
+        -webkit-transition: 0.3s -webkit-transform ease;
+        transition: 0.3s transform ease;
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+    #reply-box.active{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    
+    #J_Textarea{
+        padding-left: 0;
+    }
+    .user-list>span{
+        background-color: #ccc;
+    }
+    #J_List{
+        /*padding-bottom: 58px;*/
+        position: relative;
+    }
+    #J_List>li{
+        padding:0;
+    }
+    .ui-list-info{
+        padding:10px 0 0 0; 
+    }
+    .user-list,system-list{
+        padding-left: 20px;
+    }
+    .user-list>.ui-avatar{
+        width:30px;
+        height:30px;
+        line-height: 30px;
+        text-align: center;
+        color:#009966;
+        position: relative;
+        z-index: 2;
+    }
+    .system-list>.ui-avatar{
+        width:20px;
+        height:20px;
+        margin:12px 12px 12px 5px;
+        position: relative;
+        z-index: 2;
+    }
+    .ui-border-l{
+        margin-left: -25px;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        z-index: 1;
+        width:2px;
+    }
+    .system-list .ui-border-l{
+        margin-left: -22px;
+    }
+    .ui-btn-group{
+        position: fixed;
+        padding-bottom: 5px;
+        bottom: 0px;
+        background-color: #f8f8f8;
+        z-index: 2;
+    }
+    .J_Item>h4{
+        word-wrap:break-word;
+        padding-right: 10px;
+    }
+    .ui-form-item-textarea{
+        height: 8em;
+    }
+    #J_Textarea{
+        height: 6em;
+    }
+    #J_android.active{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height:100%;
+    }
+</style>
+<body>
+    <div class="page wait" id="J_Page">
+        <div id="J_List">
+            <section class="ui-notice" >
+                <i></i>
+                <p>没有反馈记录</p>
+            </section> 
+        </div>
+        <div class="ui-tips center" id="J_Tips">如果您觉得问题已经解决，请点击按钮关闭问题</div>
+        <div id="reply-box">
+            <div class="ui-form ui-border-t">
+                    <div class="ui-form-item ui-form-item-textarea ui-border-b">
+                        <textarea placeholder="描述您的问题..." id="J_Textarea"></textarea>
+                    </div>      
+            </div>
+            <div class="ui-btn-wrap">
+                <button class="ui-btn-lg ui-btn-primary" id="J_Submit"> 发送 </button>
+            </div>
+        </div>
+        <div class="ui-btn-group" id="btn_box">
+            <button class="ui-btn-lg" id="message-show">
+                回复
+            </button>
+            <button class="ui-btn-lg ui-btn-danger"  id="J_Close">
+                关闭问题
+            </button>
+            <a href="feedback-replyandroid.html?target=_blank" id="J_android"></a>
+        </div>
+    </div>
+	<!--#include file="/mods/head/footer.html"-->
+
+    <script >
+        seajs.use("pages/about/feedback-detail", function(){
+            seajs.use("libs/fastclick"); 
+        });
+    </script>
+
+</body>
+</html>

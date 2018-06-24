@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--#include file="/mods/head/index.html"  data='{"spmb":"1201"}' -->
+<title>缴费详情</title>
+	<link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+	<link rel="stylesheet" type="text/css" href="/??component/y-ui-btn.less.css,pages/pay.less.css">
+	<style>
+		.text {
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!--缴费详情-->
+	<div class="page-pay page wait" id="J_Page">
+
+		<div class="status">状态：<span id="J_Status"></span></div>
+
+		<div class="ui-form ui-border-tb">
+			<div class="ui-form-item ui-form-item-show ui-border-b">
+				<label for="">就诊人:</label>
+				<div class="text" id="J_PatientName"></div>
+			</div>
+			<div class="ui-form-item ui-form-item-show ui-border-b">
+				<label for="">证件号:</label>
+				<div class="text" id="J_PatientNumber"></div>
+			</div>
+		</div>
+
+
+		<div class="ui-form ui-border-tb" id="J_MailType">
+
+		</div>
+
+		<div class="ui-form ui-border-tb hide" id="J_TakeMedWinWarp">
+			<div class="ui-form-item ui-form-item-show ui-border-b">
+				<label for="">发药窗口:</label>
+				<div class="text" id="J_TakeMedWin"></div>
+			</div>
+		</div>
+
+
+		<div class="module no-padding">
+			<h1>费用列表</h1>
+	    	<ul class="ui-list ui-border-tb pay-list" id="J_InfoList"></ul>
+	    	<ul class="ui-list ui-list-text ui-border-tb">
+			    <li class="ui-border-t transition hidden" id="J_ShowMailPrice">
+			        <div class="ui-list-info">
+			            <h4>运费</h4>
+			        </div>
+			        <div class="ui-list-action">
+			        	<span class="y">￥</span><span id="J_MailPrice">0</span>
+			        </div>
+			    </li>
+			    <li class="ui-border-t">
+			        <div class="ui-list-info">
+			            <h4>合计</h4>
+			        </div>
+			        <div class="ui-list-action">
+			        	<span><span class="y">￥</span><span id="J_TotalFee">0</span></span>
+			        </div>
+			    </li>
+			    <li class="ui-border-t hide" id="J_InsurFeeBox">
+			        <div class="ui-list-info">
+			            <h4>医保支付</h4>
+			        </div>
+			        <div class="ui-list-action">
+			        	<span><span class="y">￥</span><span id="J_InsurFee">0</span></span>
+			        </div>
+			    </li>
+			    <li class="ui-border-t">
+			        <div class="ui-list-info">
+			            <h4>自费金额<span class="ui-txt-info hide" id="J_ShowMailPriceTip">(含运费)</span></h4>
+			        </div>
+			        <div class="ui-list-action">
+			        	<span class="pay-all-cost"><span class="y">￥</span><span id="J_SelfFee">0</span></span>
+			        </div>
+			    </li>
+			</ul>
+		</div>
+
+		<!--#include file="/mods/pay/index.html"-->
+
+		<div id="J_PayInfo">
+
+		</div>
+
+		<div class="ui-tips center">如需发票，请前往人工缴费窗口打印</div>
+		<div class="y-footer-placehold"></div>
+		<div class="y-ui-footer y-ui-flex">
+			<button class="y-ui-btn hide" id="J_Submit">缴费</button>
+		</div>
+
+	</div>
+
+	<style>
+
+		.show-input-cardNo-dialog .mask{
+			top:0;
+			position:fixed;
+			width:100%;
+			height:100%;
+			background:rgba(0,0,0,0.8);
+		}
+		.show-input-cardNo-dialog .input-form{
+			position:fixed;
+			top:20%;
+			background:#fff;
+			border-radius:6px;
+			padding:10px 20px;
+			box-sizing:border-box;
+			width:80%;
+			left:10%;
+		}
+		.show-input-cardNo-dialog .input-form h1{
+			font-size:18px;
+		}
+
+		.show-input-cardNo-dialog .input-form input{
+			margin-top:20px;
+			border:1px solid #d5d5d5;
+			padding:0.7em;
+			border-radius:3px;
+			width:80%;
+		}
+
+		.show-input-cardNo-dialog .input-form .y-ui-btn{
+			margin-top:20px;
+			width:100px;
+			border-radius:3px;
+			line-height:2.5em;
+			min-height:2.5em;
+		}
+
+	</style>
+
+	<div class="show-input-cardNo-dialog" id="showInputCardNoDialog" style="display:none;">
+		<div class="mask"></div>
+		<div class="input-form">
+			<h1>请输入医保卡号：</h1>
+			<input placeholder="请输入19位正确的医保卡号" autofocus  id="cardNoInput" />
+			<a type="button" class="y-ui-btn" id="cardNoSubmit" >确认</a>
+		</div>
+	</div>
+
+	<!--#include file="/mods/head/footer.html"-->
+
+	<script>
+		seajs.use("pages/pay", function(){
+        seajs.use("libs/fastclick");
+    });
+	</script>
+
+</body>
+
+</html>

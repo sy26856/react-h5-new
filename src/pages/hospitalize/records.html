@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.location.href = window.location.href.replace("pages/hospitalize/records.html","inhos-records.html")
+    </script>
+    <!--#include file="/mods/head/index.html"-->
+    <title>住院记录</title>
+    <link rel="stylesheet" type="text/css" href="../../component/frozen.less.css">
+    <link rel="stylesheet" href="records.less">
+</head>
+<body>
+
+<div class="no-patient" id="no-patient">
+    <div class="alert-span ui-border">
+        <p class="p1">尚未选择就诊人</p>
+        <p class="p2">请在选择就诊人之后查看相关信息</p>
+    </div>
+    <a class="ui-btn-lg ui-btn-primary" href="../../patient-list.html?selectView=1&saveKey=zhuyuan-cache&target=_blank">选择就诊人</a>
+</div>
+
+<div class="inpatient" id="J_Patient">
+    <div class="inpatient-icon"
+         style="background-image:url(//s.yuantutech.com/i4/47f8f9bb6c859be98888b0b13c20364a-92-92.png);"></div>
+    <div class="inpatient-info" id="J_Inpatient">
+        <div class="inpatient-name">
+            <em id="inpatient-name"></em>
+            <a class="inpatient-choice" href="../../patient-list.html?selectView=1&saveKey=zhuyuan-cache&target=_blank">切换就诊人</a>
+        </div>
+        <div class="inpatient-idNo" id="inpatient-idNo"></div>
+    </div>
+
+</div>
+<div class="line-span">
+    <div class="ui-border line"></div>
+    <div class="line-info">住院记录列表</div>
+</div>
+
+<div class="page wait" id="J_Page">
+
+    <div class="hospitalize-list" id="J_List">
+
+        <div style="height: 200px;">
+            <div class="ui-notice">
+                <i></i>
+                <p>没有住院记录</p>
+            </div>
+        </div>
+        <!--<a class="hospitalize-item ui-border-tb" href="http://a.uat.yuantutech.com/pages/hospitalize/daily-list.html?patientHosId=00097520&amp;target=_blank&amp;corpId=901&amp;patientId=1000008697&amp;patientName=%E8%8B%97%E7%8E%89%E8%BE%89&amp;spm=100..1000.7" data-spm-id="100..1000.7">-->
+        <!--<div class="hospitalize-body ">-->
+        <!--<div class="hospital-name">-->
+        <!--南阳市第一人民医院-->
+        <!--</div>-->
+        <!--<div class="hospital-dept">-->
+        <!--产二科-->
+        <!--<em>4,296.36元</em>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="ui-border-t" style="height: 1px"></div>-->
+        <!--<div class="hospitalize-title">-->
+        <!--入院日期:2016-10-24-->
+        <!--</div>-->
+        <!--<div>-->
+        <!--住院号: 00097520-->
+        <!--</div>-->
+        <!--</a>-->
+    </div>
+
+</div>
+
+<!--#include file="/mods/head/footer.html"-->
+
+<script>
+    seajs.use("pages/hospitalize/records", function () {
+        seajs.use("libs/fastclick");
+    });
+</script>
+</body>
+</html>

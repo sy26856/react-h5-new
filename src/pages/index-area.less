@@ -1,0 +1,141 @@
+
+.drop-list{
+  .drop-item{
+    position: relative;
+    margin:10px 0;
+    background-color:#fff;
+    padding:10px;
+    display: block;
+    overflow: hidden;
+    
+    .off-line-tag{
+      // border:1px solid #ccc;
+      // width:5em;
+      // text-align: center;
+      // color:#ccc;
+      // border-width:1px 0;
+      background:url(//s.yuantutech.com/i4/61be25b9068fffdfc3bfe07b138dca0a-178-178.png);
+      background-size: cover;
+      text-indent: -999em;
+      position: absolute;
+      font-size: 10px;
+      right: -6px;
+      top: -4px;
+      width:70px;
+      height:70px;
+
+    }
+    
+    .logo{
+      background:url(//s.yuantutech.com/i4/32fed382b55a19512d79c29655eafffd.png);
+      background-size:100% 100%;
+      width:60px;
+      height:60px;
+      float: left;
+
+    }
+
+    .info{
+        margin-left:70px;
+        h1{
+          font-size:16px;
+          color:#000;
+        }
+
+        .des{
+          font-size:12px;
+          color:#8C8C8C;
+        }
+
+        .honor{
+          line-height:1em;
+          .honor-tag{
+            font-size:12px;
+            color:#FD7849;
+            padding:2px 0;
+          }
+        }
+
+        .address{
+          color:rgba(0,0,0,.7);
+          font-size:12px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+    }
+  }
+
+
+}
+
+
+
+.slider {
+  position: relative;
+  
+  overflow: hidden;
+  
+  .slide-items{
+    padding-bottom:46.875%;
+    &.animation{
+
+        -webkit-transition:-webkit-transform 600ms cubic-bezier(0.23, 1, 0.32, 1);
+        -moz-transition:-moz-transform 600ms cubic-bezier(0.23, 1, 0.32, 1);
+        transition:transform 600ms cubic-bezier(0.23, 1, 0.32, 1);
+
+      }
+    }
+
+}
+
+.slider-slides {
+  position: absolute;
+  width:100%;
+  height:100%;
+  background-size:20px 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+  a{
+    display: block;
+  }
+}
+
+.slider-pager {
+  position: absolute;
+  bottom: 20px;
+  z-index: 1;
+  width: 100%;
+  height: 7px;
+  text-align: center;
+  .slider-pager-page {
+    display: inline-block;
+    margin: 0 3px;
+    width:7px;
+    color: #000;
+    text-decoration: none;
+    opacity:.3;
+    &.active {
+      -webkit-transition: opacity .4s ease-in;
+      transition: opacity .4s ease-in;
+      opacity:1;
+      .ion-record{
+        background:#fff;
+      }
+    }
+
+    .ion-record {
+      display: block;
+      width:7px;
+      height:7px;
+      background-color: #000;
+      border-radius: 50%;
+    }
+
+  }
+
+}

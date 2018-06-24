@@ -1,0 +1,168 @@
+.oxy-con-tip{
+    line-height:30px;
+    color:#999;
+    position:absolute;
+    top:50%;left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size:14px;
+    text-align: center;
+    .oxy-con-tip-img{
+        width:80px;
+    }  
+}
+.con-tip{
+    line-height:70px;
+    font-size:14px;
+    color:#666;
+    text-align: center;
+}
+.oxy-detect-box{
+    background:#fff;
+    font-size:12px;
+    padding:0 10px;
+    margin-bottom:15px;
+    
+    .oxy-detect-head{
+        border-bottom:1px solid #e6e6e6;
+        padding:10px 0;
+        .oxy-con-header{
+            display:flex;
+            padding:0 10px 10px;
+            .oxy-header-title{
+                width:50%;
+                box-sizing: border-box;
+                font-size:14px;
+                text-align:center;
+                margin-top:15px;
+                color:rgb(153,153,153);
+            }
+        }
+        .oxy-con-result{
+            height:180px; 
+            text-align: center;
+            position:relative;
+            margin-top:5px;
+            margin-bottom:15px;
+            .oxy-con-position{
+                width:100px;
+                height:100px;
+                border-radius:100%;
+                background:#fff;
+                font-size:28px;
+                color:#949da4;
+                font-weight:bold;
+                line-height:100px;
+                text-align:center;
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform: translateX(-50%) translateY(-50%);
+                z-index: 444;
+            }
+        }
+        .oxy-con-times{
+            display:-webkit-flex;
+            display:flex;
+            justify-content: space-around;
+            margin-bottom:20px;
+            padding:0 20px;
+            li{
+                position:relative;
+                padding-left:17px;
+                .oxy-con-txt{
+                    font-size:13px;
+                }
+                .oxy-con-tim{
+                    font-size:15px;
+                    font-weight:bold;
+                }
+                span{
+                    display:block;
+                    position:absolute;
+                    top:5px;left:0px;
+                    width:7px;
+                    height:7px;
+                    border-radius:100%;
+                }
+                .oxy-color-green{
+                    background:#95d452;
+                }
+                .oxy-color-yellow{
+                    background:#ffcd00;
+                }
+                .oxy-color-red{
+                    background:#ff5256;
+                }
+            }
+            p{
+                text-align:center;
+                color:#666666;
+            }
+        }
+    }
+    .oxy-detect-con{
+        display:-weblit-flex;
+        display:flex;
+        padding:10px 0;
+        position:relative;
+        .oxy-con-line{
+            height:80px;
+            display:inline-block;
+            vertical-align: middle;
+            border-left:1px solid #eee;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translateX(-50%) translateY(-50%);
+
+        }
+        .oxy-con-left{
+            padding:0 20px 0 15px; 
+        }
+        .oxy-con-right{
+            padding:0 15px 0 20px; 
+        }
+        .oxy-con-left,.oxy-con-right{
+            width: 50%;
+            box-sizing: border-box;
+            .oxy-con-per{
+                display:-webkit-flex;
+                display:flex;
+                justify-content: space-between;                
+                span{
+                    display:block;
+                }
+                .oxy-con-shu{
+                    height:55px;
+                }
+                .oxy-result-per{
+                    color:#333;
+                    font-size:20px;
+                    i{
+                        font-size:13px;
+                        margin-left:5px;
+                    }
+                }
+                .oxy-result-des{
+                    color:#666;
+                    font-size:12px;
+                    line-height:25px;
+                }                
+            }
+            .oxy-result-time{
+                color:#999;
+                margin-top:5px;
+                font-size:12px;
+                margin-bottom:5px;
+                margin-top:16px;
+                line-height:15px;
+            }
+        }
+        .oxy-con-title{
+            font-size:14px;
+            color:#333;
+            margin-top:5px;
+            margin-bottom:15px;
+        }
+    }
+}

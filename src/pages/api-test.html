@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include file="/mods/head/index.html"-->
+    <title>api test page</title>
+    <link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+    <style>
+        .ui-form-item{
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="frozen-module-dom">
+        <div class="dom-content">
+            <div class="ui-form ui-border-t">
+                <div class="ui-form-item ui-border-b">
+                    <label>用户：</label>
+                    <div>
+                        <input type="text" id="J_User" disabled>
+                    </div>
+                </div>
+
+                <div class="ui-form-item ui-border-b">
+                    <label>环境选择：</label>
+                    <div class="ui-select">
+                        <select id="J_HuanJing">
+                            <option value="0">测试环境</option>
+                            <option value="1">线上环境</option>
+                            <option value="-1">本地环境</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui-form ui-border-t">
+                
+                <div class="ui-form-item ui-border-b">
+                    <label>选接口：</label>
+                    <div class="ui-select">
+                        <select id="J_ApiList"></select>
+                    </div>
+                </div>
+                 <div class="ui-form-item ui-border-b">
+                    <label>名字：</label>
+                    <input type="text" id="J_APIname" value="">
+                </div>
+
+                <div class="ui-form-item ui-border-b">
+                    <label>填接口：</label>
+                    <div>
+                        <input type="text" id="J_API" value="/user-web/restapi/ytUsers/getUserInfo" >
+                    </div>
+                </div>
+
+                <div class="ui-form-item ui-border-b" style="height:auto;">
+                    <label>参数：</label>
+                    <textarea style="height:100px" id="J_Param" >{
+    "ver":"1.0"
+} </textarea>
+                </div>
+            </div>
+            
+
+            <div class="ui-btn-wrap">
+                
+                <button class="ui-btn-lg ui-btn-primary" id="J_Test">test</button>
+
+            </div>
+
+
+            <div class="ui-form ui-border-t">
+
+        
+
+                <div class="ui-form-item ui-border-b" style="height:auto;">
+                    <label>返回值：</label>
+                    <textarea style="height:300px" id="J_Result"></textarea>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <!--#include file="/mods/head/footer.html"-->
+
+    <script >
+        seajs.use("pages/api-test");
+    </script>
+    
+</body>
+</html>

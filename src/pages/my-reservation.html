@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include file="/mods/head/index.html"  data='{"spmb":"1100"}' -->
+    <title>我的预约/挂号</title>
+    <link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+    <style type="text/css">
+
+        .page-reservation .ui-list{
+            margin-bottom: 10px;
+        }
+        .page-reservation .ui-list h4{
+            color:#000;
+        }
+        
+        .page-reservation .ui-list h5{
+            margin-top:3px;
+            padding-top:2px;  
+        }
+
+        .ui-list .rmb{
+            color:#000;
+        }
+
+        .ui-list .rmb,.ui-list .status{
+            float: right;
+        }
+
+        .ui-list .rmb .y{
+            font-size:70%;
+        }
+
+        .ui-tips{
+            margin:10px 0 20px 0;
+        }
+        
+        /*覆盖*/
+        #J_PullLoading{
+            transition:opacity 0s ease;
+            /*transition: opacity .35s ease;*/
+        }
+
+        .tag{
+            border:1px solid #ffad35;
+            /*box-shadow:0 0 1px #ffad35;*/
+            color:#ffad35;
+            font-size:80%;
+            padding:1px 4px;
+            margin-right:3px;
+            border-radius:4px;
+        }
+
+    </style>
+</head>
+<body>
+<script>
+  window.location.href = window.location.href.replace('/pages', '')
+</script>
+    <div class="page-reservation page wait" id="J_Page">
+        <div id="J_List">
+            <section class="ui-notice " id="J_NoData">
+                <i></i>
+                <p>没有预约记录</p>
+                <div class="ui-tips center hide" id="J_TipsFeedback"><a href="about/feedback.html?target=_blank">有预约没显示？点击反馈</a></div>
+            </section>
+        </div>
+        <div class="loading small hidden" id="J_PullLoading"></div>
+    </div>
+
+
+    <!--#include file="/mods/head/footer.html"-->
+
+    <script >
+        seajs.use("pages/my-reservation", function(){
+            seajs.use("libs/fastclick"); 
+        })
+    </script>
+</body>
+</html>

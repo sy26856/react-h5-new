@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include file="/mods/head/index.html"  data='{"spmb":"1532"}' -->
+    <title>找回/重设密码</title>
+    <link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+    <link rel="stylesheet" type="text/css" href="./info-confirm.less.css">
+    <style type="text/css">
+
+        .page-forget-pwd{
+            padding-top:20px;
+        }
+
+        .page-forget-pwd .ui-form-item-r input{
+            padding-left:60px !important;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="page-forget-pwd">
+
+        <div class="ui-form ui-border-tb ui-label2word" >
+            <div class="ui-form-item ui-form-item-show  ui-border-b">
+                <label for="J_MobileNumber">手机:</label>
+                <input type="number" value="" id="J_MobileNumber" placeholder="请输入手机号码">
+            </div>
+            <div class="ui-form-item  ui-form-item-show ui-form-item-r ui-border-b">
+                <label for="J_Code">验证码:</label>
+                <input type="text" maxlength="6" id="J_Code"  placeholder="请输入验证码">
+                <button type="button" class="ui-border-l" id="J_SendCode" >发送</button>
+            </div>
+        </div>
+
+         <div class="ui-btn-wrap">
+            <button class="ui-btn-lg ui-btn-primary" id="J_Submit">
+                下一步，重设密码
+            </button>
+        </div>
+
+
+
+
+
+    </div>
+    <!--#include file="/mods/head/footer.html"-->
+
+    <script >
+        seajs.use("pages/forget-pwd", function(){
+            seajs.use("libs/fastclick");
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include file="/mods/head/index.html"-->
+    <title>日清单明细</title>
+    <link rel="stylesheet" type="text/css" href="../../component/frozen.less.css">
+    <link rel="stylesheet" href="daily-detail.less">
+</head>
+<body>
+    <div class="inpatient ui-border-b">
+        <div class="inpatient-icon"
+             style="background-image:url(//s.yuantutech.com/i4/47f8f9bb6c859be98888b0b13c20364a-92-92.png);"></div>
+        <div class="inpatient-info" id="J_Inpatient">
+            <div class="inpatient-name">
+                <em id="inpatient-name"></em>
+                <!--<a class="inpatient-choice" href="../patient-list.html?saveKey=zhuyuan-cache&selectView=1&target=_blank">切换就诊人</a>-->
+            </div>
+            <div class="inpatient-idNo" id="inpatient-idNo"></div>
+        </div>
+    </div>
+    <div class="hospitalize-item ui-border-tb">
+        <em class="hos-name" id="hos-name"></em>住院号: <em class="hos-no" id="patientHosId"></em>
+    </div>
+    <div class="line-span" id="J_List">
+        <div class="ui-border line"></div>
+        <div class="line-info">日清单明细</div>
+
+    </div>
+ <div class="page wait" id="J_Page">
+   <div>
+        <div class="detail-date ui-border-t">
+        </div>
+        <table class="ui-table ui-border-tb">
+            <thead>
+            <tr class="ui-txt-justify-one">
+                <th >名称</th>
+                <th >单价</th>
+                <th >数量</th>
+                <th >金额</th>
+            </tr>
+            </thead>
+            <tbody id="J_tablebody">
+            <!--<tr>-->
+                <!--<td class="warp">护理费护理费护理费护理费护理费护理费护理费</td>-->
+                <!--<td>123.10</td>-->
+                <!--<td>1</td>-->
+                <!--<td>123.10</td>-->
+            <!--</tr>-->
+        </table>
+        <div class="cost-span ui-border-tb position-fix">
+            <div class="daily-cost" >合计:<em>0.00</em></div>
+        </div>
+        <div id="bottom-line" style="height: 30px"></div>
+    </div>
+
+    <!--#include file="/mods/head/footer.html"-->
+
+    <script>
+        seajs.use("pages/hospitalize/daily-detail", function () {
+            seajs.use("libs/fastclick");
+        });
+    </script>
+</body>
+</html>

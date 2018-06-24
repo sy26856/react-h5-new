@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<!--#include file="/mods/head/index.html"  data='{"spmb":"1201"}'-->
+		<title>缴费详情</title>
+		<link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+		<style type="text/css">
+			.page-pay .ui-form-item {
+				clear: both;
+			}
+			.page-pay-success .ui-form {
+				margin: 10px;
+			}
+			.page-pay-success .ui-form h2 {
+				color: #ff7800;
+				text-align: center;
+				line-height: 3em;
+			}
+			.page-pay-success .des {
+				font-size: 12px;
+				margin: 0px 12px;
+				color: #666;
+			}
+			.page-pay .pay_logo {
+				width: 40px;
+				height: 40px;
+				margin-top: 3px;
+			}
+			.page-pay .pay-serial-number {
+				color: #DCDCDC;
+				margin-left: 80px;
+			}
+			.page-pay .pay-time {
+				color: #DCDCDC;
+				float: right;
+			}
+			.page-pay .pay-name {
+				font-size: 22px;
+				margin-left: 80px;
+				font-weight: bold;
+			}
+			.page-pay .pay-ID-number {
+				color: #DCDCDC;
+				margin-left: 25px;
+				margin-left: 80px;
+			}
+			.page-pay .pay-cost {
+				float: right;
+			}
+			.page-pay .pay-cost>span {
+				font-size: 70%;
+			}
+			.page-pay .pay-all-cost {
+				float: right;
+				color: red;
+				font-size: 22px;
+				font-weight: bold;
+			}
+			.page-pay .pay-all-cost>span {
+				font-size: 70%;
+			}
+			.page-pay .pay_label label {
+				width: 100%;
+				display: block;
+			}
+			.page-pay .pay_label img {
+				vertical-align: middle;
+				margin-right: 2px;
+			}
+			.page-pay .pay_label input {
+				float: right;
+				margin-top: 8px;
+			}
+			.page-pay .pay-list>label {
+				width: 150px!important;
+			}
+			.page-pay .ts {
+				padding: 10px;
+			}
+			.page-pay .ts>h3 {
+				color: red;
+				font-size: 20px;
+			}
+			.page-pay .ts>p {
+				text-indent: 2em;
+				color: #C94A4A;
+			}
+			.page-pay-success .ts{
+				padding: 10px;
+			}
+			.page-pay-success .ts>h1{
+				color: red;
+				font-size: 20px;
+			}
+			.page-pay-success .ts>p{
+				text-indent: 2em;
+				color: #C94A4A;
+			}
+			.page-pay-success .reminder {
+				color: red;
+			}
+			.page-pay-success .pay_logo {
+				width: 40px;
+				height: 40px;
+				margin-top: 3px;
+				margin-left: -44px;
+			}
+			.page-pay-success .reminder {
+				color: red;
+			}
+			.page-pay-success .nav {
+				text-align: center;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+		</style>
+
+
+
+		<style type="text/css">
+
+			.page-pay{
+				margin-top:20px;
+			}
+			.ui-list-info .ui-txt-info{
+				position:absolute;
+				right:0;
+				top:10px;
+			}
+			.ui-list-info h4{
+				margin-left:54px;
+				font-size:12px !important;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<!--充值成功-->
+		<div class="page-pay-success " id="">
+			<div class="ui-form ui-border-radius">
+				<div class="ui-form-item ui-form-item-show nav">
+					<img class="pay_logo" src="//s.yuantutech.com/i4/4f5f91d895fbc44d6acbcfb7b07da813.png" />
+					<label>缴费成功</label>
+				</div>
+				<div class="ui-form-item ui-form-item-show">
+					<label for="">就诊人:</label>
+					<input type="text" value="李四" readonly>
+				</div>
+				<div class="ui-form-item ui-form-item-show">
+					<label for="">缴费金额:</label>
+					<input type="text" value="982.5" readonly>
+				</div>
+				<div class="ui-form-item ui-form-item-show">
+					<label for="">缴费单号:</label>
+					<input type="text" value="12345678" readonly>
+				</div>
+				<div class="ui-form-item ui-form-item-show">
+					<label for="">缴费时间:</label>
+					<input type="text" value="2015-10-12 14:32" readonly>
+				</div>
+			</div>
+			<div class="ui-btn-wrap">
+				<a class="ui-btn-lg ui-btn-primary" href="pay.html">确定</a>
+			</div>
+
+		</div>
+		
+		<!--#include file="/mods/head/footer.html"-->
+    
+		<script>
+			seajs.use("pages/pay", function(){
+            seajs.use("libs/fastclick"); 
+        });
+		</script>
+
+	</body>
+
+</html>

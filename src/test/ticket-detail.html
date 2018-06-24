@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--#include file="/mods/head/index.html"  data='{"spmb":"1522"}' -->
+    <title>工单详情</title>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	
+	<style>
+		.info{
+			color:#999;
+			margin-top:20px;
+			/*margin-right:20px;*/
+			line-height:2em;
+		}
+
+		.info span{
+			margin-right:20px;
+		}
+
+		.content{
+			font-size:16px;
+		}
+
+		.jumbotron{
+			padding:2em !important;
+			margin-bottom:10px !important;
+			/*width:80%;*/
+		}
+		
+		.jumbotron h3{
+			margin-top:0;
+		}
+
+		.reply{
+			margin:20px 0 100px 0;
+			text-align:right;
+			/*width:80%;*/
+		}
+
+		.reply-content{
+
+		}
+
+		.main,.reply-user{
+			background-color:#337ab7;
+			color:#fff;
+			width:100%;
+		}
+
+		.main .info,.reply-user .info{
+			color:#fff;
+
+		}
+
+		.reply-user{
+			background-color:rgba(51,122,183,0.64)
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-xs-12">
+				<h1><a href="ticket-system-admin.html">工单系统后台</a> - 查看详情</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+
+				<div id="J_Detail">
+					<div style="padding:3em;text-align:center;">加载中...</div>
+				</div>
+
+				<div class="reply" id="J_Reply">
+
+					  <div class="form-group">
+					    <textarea class="form-control" id="J_ReplyContent" ></textarea>
+					  </div>
+					  <button type="submit" class="btn btn-default" id="J_ReplySubmit">确认回复</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--#include file="/mods/head/footer.html"-->
+
+	<script>
+
+		// window.config.domain = "http://fbi.yuantutech.com:3005";
+		window.config.pwd = window.localStorage.getItem("ticket-admin-key");
+
+		seajs.use("test/ticket-detail")
+	</script>
+
+	<script type="text/javascript">
+		
+		 var scrollFunc=function(e){ 
+		  e=e || window.event; 
+		  if(e.wheelDelta && event.ctrlKey){//IE/Opera/Chrome 
+		   event.returnValue=false;
+		  }else if(e.detail){//Firefox 
+		   event.returnValue=false; 
+		  } 
+		 }  
+		 if(document.addEventListener){ 
+		 document.addEventListener('DOMMouseScroll',scrollFunc,false); 
+		 }//W3C 
+		 window.onmousewheel=document.onmousewheel=scrollFunc;//IE/Opera/Chrome/Safari 
+		
+	</script>
+</body>
+</html>

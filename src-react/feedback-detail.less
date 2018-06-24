@@ -1,0 +1,133 @@
+html, body, .page, .detail-list {
+  height: 100%;
+}
+
+.detail-list {
+  .detail-text {
+    padding: 20px 0;
+    p {
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+  .listview-msg {
+    word-break: break-all;
+  }
+  .listview-img {
+
+  }
+  .listview-img-box {
+    box-sizing: border-box;
+    float: left;
+    width: 46px;
+    height: 46px;
+    padding: 5px;
+  }
+  @media (max-width: 340px) {
+    .listview-img-box {
+      width: 46px;
+      height: 46px;
+    }
+  }
+  @media (min-width: 341px) and (max-width: 370px) {
+    .listview-img-box {
+      width: 57px;
+      height: 57px;
+    }
+  }
+  @media (min-width: 371px) and (max-width: 400px) {
+    .listview-img-box {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  @media (min-width: 401px) {
+    .listview-img-box {
+      width: 65px;
+      height: 65px;
+    }
+  }
+  .listview-img-container {
+    margin-left: -5px;
+  }
+  .listview-img-container:after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 0;
+  }
+  .hide {
+    display: none;
+  }
+  .ticket-reply {
+    background: #ffffff;
+    padding: 5px 10px;
+    .expandingArea {
+      position: relative;
+    }
+    .textarea {
+      float: left;
+      font-size: 16px;
+      min-height: 30px;
+      max-height: 90px;
+      width: 85%;
+      padding: 2px 2px 2px 6px;
+      // word-wrap: break-word;
+      background: #eeeeee;
+      border-radius: 4px;
+      line-height: 30px;
+    }
+    textarea {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 95%;
+      font-size: 16px;
+      width: 100%;
+      outline: none;
+      border: none;
+      padding: 0 0 0 4px;
+      // word-wrap: break-word;
+      background: #eeeeee;
+      border-radius: 4px;
+      line-height: 30px;
+    }
+    pre {
+      display: block;
+      visibility: hidden;
+      span {
+        display: inline-block;
+        width: 100%;
+        word-break: break-all;
+        white-space: normal;
+      }
+    }
+    .send-reply {
+      float: right;
+      height: 34px;
+      line-height: 34px;
+    }
+  }
+}
+
+.image-view {
+  background-color: #000;
+  min-height: 100%;
+  overflow: auto;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+  }
+}
+
+.image-view-box {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include file="/mods/head/index.html"  data='{"spmb":"3000"}' -->
+    <title>常见问题</title>
+    <link rel="stylesheet" type="text/css" href="../../component/frozen.less.css">
+    <link rel="stylesheet" type="text/css" href="qa-list.less.css">
+</head>
+<body>
+
+    <div class="page qa-page wait" id="J_Page">
+        <div class="content" id="J_Content">
+            <!--<ul class="ui-list ui-list-text ui-list-link ui-border-tb ui-container" id="J_Ul">-->
+
+            <!--</ul>-->
+        </div>
+    </div>
+
+    <!--#include file="/mods/head/footer.html"-->
+    <script>
+        window.location.href = window.location.href.replace('/pages/about', '')
+    </script>
+    <script>
+        seajs.use("pages/about/qa-list", function () {
+            seajs.use("libs/fastclick");
+        })
+    </script>
+
+</body>
+</html>

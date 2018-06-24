@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="spm-id" content="100.1050"/>
+  <link rel="stylesheet" type="text/css" href="//{cnd_domain}/yuantu/smart-ui/{smart_ui_version}/css/smart-ui.css">
+  <title>慧医</title>
+  <script src="//{cnd_domain}/tms/h5/special-config.php"></script>
+  <script>
+    var areaTitle = {
+      "29":"青岛市卫生计生委",
+      "60":"番禺民生卡智慧医疗",
+      "1029":"中原e医"
+    };
+
+    var unionId = location.href.match(/unionId=(\d+)/);
+    if(unionId && unionId[1]){
+      document.title = areaTitle[unionId[1]] || "慧医";
+    }
+  </script>
+</head>
+<body>
+<div class="page" id="root">
+
+</div>
+</body>
+</html>

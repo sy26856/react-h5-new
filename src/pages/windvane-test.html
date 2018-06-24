@@ -1,0 +1,422 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--#include file="/mods/head/index.html"  data='{"spmb":"1551"}' -->
+  <title>windvane-test</title>
+  <link rel="stylesheet" type="text/css" href="../component/frozen.less.css">
+  <link rel="stylesheet" type="text/css" href="reg-type.less.css">
+  <style type="text/css">
+    .ui-btn-primary {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="ui-btn-wrap">
+  <a class="ui-btn-lg ui-btn-primary" href="../javascript-core.html?target=_blank">
+    <h4 class="ui-nowrap">javascript core</h4>
+  </a>
+  <button class="ui-btn-lg ui-btn-primary" onclick="debug()">开启debug</button>
+
+  <button class="ui-btn-lg ui-btn-primary" onclick="addPageEvent()">监听页面生命周期变化</button>
+
+  <button class="ui-btn-lg ui-btn-primary" onclick="window.location.reload()">刷新页面</button>
+
+  <button class="ui-btn-lg ui-btn-primary" onclick="alert(document.cookie)">查看cookie</button>
+
+  <button class="ui-btn-lg ui-btn-primary" onclick="alert(navigator.userAgent)">查看 UA</button>
+
+
+  <a class="ui-btn-lg ui-btn-primary" href="windvane-test.html?target=_blank&native_title=no"> target=_blank 新开窗口</a>
+
+  <button class="ui-btn-lg ui-btn-primary" onclick="add()">jsbrige 求和 1+2</button>
+
+  <button class="ui-btn-lg ui-btn-primary" onclick="backView()">返回上一个native界面</button>
+
+  <button class="ui-btn-lg ui-btn-primary" onclick="backView2()">返回上一个native界面，并刷新</button>
+
+  <button class="ui-btn-lg ui-btn-primary" onclick="popToRootViewController()">标记当前View为根界面</button>
+
+  <button class="ui-btn-lg ui-btn-primary" onclick="pushDataToParent()">向上一个view发送信息</button>
+
+
+  <button class="ui-btn-lg ui-btn-primary" onclick="setTitle()">设置view title</button>
+
+  <button class="ui-btn-lg ui-btn-primary" onclick="openViewRight()">打开一个view窗口 right-in</button>
+
+  <button class="ui-btn-lg ui-btn-primary" onclick="openViewBottom()">打开一个view窗口 bottom-in</button>
+
+
+  <button class="ui-btn-lg ui-btn-primary" onclick="pay()">支付宝支付请求</button>
+
+  <button class="ui-btn-lg ui-btn-primary" onclick="pay2()">微信支付请求</button>
+
+  <button class="ui-btn-lg ui-btn-primary" onclick="getDeviceToken()">获取设备id</button>
+  <button class="ui-btn-lg ui-btn-primary" onclick="setBadge()">设置未读消息条数10</button>
+  <button class="ui-btn-lg ui-btn-primary" onclick="clearCache()">清除native缓存</button>
+
+  <button class="ui-btn-lg ui-btn-primary" onclick="callPhotoUpload()">上传图片</button>
+
+  <button class="ui-btn-lg ui-btn-primary" onclick="callPhotoUpload2()">上传图片(允许修改)</button>
+
+  <button class="ui-btn-lg ui-btn-primary" onclick="skipNavigation()">唤起第三方导航</button>
+
+  <button class="ui-btn-lg ui-btn-primary" onclick="hasBrigeMethod()">测试是否存在某个brige</button>
+  <button class="ui-btn-lg ui-btn-primary" onclick="joinVideoRoom()">加入ABC视频房间</button>
+
+  <button class="ui-btn-lg ui-btn-primary" onclick="imageBrowser()">预览图片</button>
+
+  <button class="ui-btn-lg ui-btn-primary" onclick="viodTest()">测试本地视频对话</button>
+
+  <a href="yuantuhuiyi://huiyi.app/home" class="ui-btn-lg ui-btn-primary">Intent /home</a>
+
+  <a href="yuantuhuiyi://huiyi.app/news" class="ui-btn-lg ui-btn-primary">Intent /news</a>
+
+  <a href="yuantuhuiyi://huiyi.app/mine" class="ui-btn-lg ui-btn-primary">Intent /mine</a>
+
+  <a href="yuantuhuiyi://huiyi.app/message" class="ui-btn-lg ui-btn-primary">Intent /message</a>
+
+  <a href="yuantuhuiyi://huiyi.app/scanner" class="ui-btn-lg ui-btn-primary">Intent /scanner</a>
+
+  <a href="yuantuhuiyi://huiyi.app/setting" class="ui-btn-lg ui-btn-primary">Intent /setting</a>
+
+  <a href="yuantuhuiyi://huiyi.app/hospital?corpId=261" class="ui-btn-lg ui-btn-primary">Intent /hosp?corpId=261</a>
+
+  <a href="yuantuhuiyi://huiyi.app/webview?url=https://uat.yuantutech.com/yuantu/h5-cli/1.5.21/pages/index.html?unionId=29&corpId=261"
+     class="ui-btn-lg ui-btn-primary">Intent /webview?url=baidu.com</a>
+
+  <button class="ui-btn-lg ui-btn-primary" onclick="errorTest()">错误测试</button>
+
+  <a href="yuantuhuiyi://huiyi.app/main?type=0" class="ui-btn-lg ui-btn-primary">主页</a>
+  <a href="yuantuhuiyi://huiyi.app/main?type=1" class="ui-btn-lg ui-btn-primary">资讯</a>
+  <a href="yuantuhuiyi://huiyi.app/main?type=2" class="ui-btn-lg ui-btn-primary">消息</a>
+  <a href="yuantuhuiyi://huiyi.app/main?type=3" class="ui-btn-lg ui-btn-primary">我的</a>
+  <a href="yuantuhuiyi://huiyi.app/scanner" class="ui-btn-lg ui-btn-primary">扫码</a>
+  <a href="yuantuhuiyi://huiyi.app/hospital?corpId=261" class="ui-btn-lg ui-btn-primary">医院主页</a>
+  <a href="yuantuhuiyi://huiyi.app/setting" class="ui-btn-lg ui-btn-primary">打开设置</a>
+  <a href="yuantuhuiyi://huiyi.app/search?corpId=261&sourceId=0">打开搜索界面(sourceId=0)</a>
+  <a href="yuantuhuiyi://huiyi.app/search?corpId=261&sourceId=1">打开搜索界面(sourceId=1)</a>
+  <a href="yuantuhuiyi://huiyi.app/msgDetail?msgType=1" class="ui-btn-lg ui-btn-primary">打开消息详情界面</a>
+  <a href="yuantuhuiyi://huiyi.app/regType?corpId=261" class="ui-btn-lg ui-btn-primary">预约挂号</a>
+  <a href="yuantuhuiyi://huiyi.app/corpList?sourceCode=0">首页 预约挂号(sourceCode=0)</a>
+  <a href="yuantuhuiyi://huiyi.app/corpList?sourceCode=1">首页 预约挂号(sourceCode=1)</a>
+  <a href="yuantuhuiyi://huiyi.app/myReservation?corpId=261" class="ui-btn-lg ui-btn-primary">我的预约</a>
+  <a href="yuantuhuiyi://huiyi.app/recharge?corpId=550" class="ui-btn-lg ui-btn-primary">充值</a>
+  <a href="yuantuhuiyi://huiyi.app/payList?corpId=261" class="ui-btn-lg ui-btn-primary">缴费</a>
+  <a href="yuantuhuiyi://huiyi.app/report" class="ui-btn-lg ui-btn-primary">报告单 (APP首页\我的)</a>
+  <a href="yuantuhuiyi://huiyi.app/report?corpId=261" class="ui-btn-lg ui-btn-primary">报告单（医院首页)</a>
+  <a href="yuantuhuiyi://huiyi.app/reportDetail?paramId=99&corpId=261&type=0">检验报告单详情</a>
+  <a href="yuantuhuiyi://huiyi.app/queuing?corpId=261" class="ui-btn-lg ui-btn-primary">排队叫号</a>
+  <a href="yuantuhuiyi://huiyi.app/navigation?corpId=261" class="ui-btn-lg ui-btn-primary">医院导航</a>
+  <a href="yuantuhuiyi://huiyi.app/bill?unionId=29" class="ui-btn-lg ui-btn-primary">账单</a>
+  <a href="yuantuhuiyi://huiyi.app/billDetail?corpId=261&id=133657" class="ui-btn-lg ui-btn-primary">账单详情</a>
+  <a href="yuantuhuiyi://huiyi.app/healthRecord?corpId=261&unionId=29" class="ui-btn-lg ui-btn-primary">健康档案</a>
+  <a href="yuantuhuiyi://huiyi.app/healthyDetail?id=12&sourceId=4321" class="ui-btn-lg ui-btn-primary">健康档案明细</a>
+</div>
+
+<button class="ui-btn-lg ui-btn-primary" onclick="errorTest()">错误测试</button>
+
+
+  <!--#include file="/mods/head/footer.html"-->
+
+  <a href="yuantuhuiyi://huiyi.app/main?type=0" class="ui-btn-lg ui-btn-primary">主页</a>
+  <a href="yuantuhuiyi://huiyi.app/main?type=1" class="ui-btn-lg ui-btn-primary">资讯</a>
+  <a href="yuantuhuiyi://huiyi.app/main?type=2" class="ui-btn-lg ui-btn-primary">消息</a>
+  <a href="yuantuhuiyi://huiyi.app/main?type=3" class="ui-btn-lg ui-btn-primary">我的</a>
+  <a href="yuantuhuiyi://huiyi.app/scanner" class="ui-btn-lg ui-btn-primary">扫码</a>
+  <a href="yuantuhuiyi://huiyi.app/hospital?corpId=261" class="ui-btn-lg ui-btn-primary">医院主页</a>
+  <a href="yuantuhuiyi://huiyi.app/setting" class="ui-btn-lg ui-btn-primary">打开设置</a>
+
+  <a href="yuantuhuiyi://huiyi.app/search?corpId=261&sourceId=0" class="ui-btn-lg ui-btn-primary">打开搜索界面(sourceId=0)</a>
+  <a href="yuantuhuiyi://huiyi.app/search?corpId=261&sourceId=1" class="ui-btn-lg ui-btn-primary">打开搜索界面(sourceId=1)</a>
+  <a href="yuantuhuiyi://huiyi.app/msgDetail?msgType=1" class="ui-btn-lg ui-btn-primary">打开消息详情界面</a>
+  <a href="yuantuhuiyi://huiyi.app/regType?corpId=261" class="ui-btn-lg ui-btn-primary">预约挂号</a>
+  <a href="yuantuhuiyi://huiyi.app/corpList?sourceCode=0" class="ui-btn-lg ui-btn-primary">首页 预约挂号(sourceCode=0)</a>
+  <a href="yuantuhuiyi://huiyi.app/corpList?sourceCode=1" class="ui-btn-lg ui-btn-primary">首页 预约挂号(sourceCode=1)</a>
+
+  <a href="yuantuhuiyi://huiyi.app/myReservation?corpId=261" class="ui-btn-lg ui-btn-primary">我的预约</a>
+  <a href="yuantuhuiyi://huiyi.app/recharge?corpId=550" class="ui-btn-lg ui-btn-primary">充值</a>
+  <a href="yuantuhuiyi://huiyi.app/payList?corpId=261" class="ui-btn-lg ui-btn-primary">缴费</a>
+  <a href="yuantuhuiyi://huiyi.app/report" class="ui-btn-lg ui-btn-primary">报告单 (APP首页\我的)</a>
+
+  <a href="yuantuhuiyi://huiyi.app/report?corpId=261" class="ui-btn-lg ui-btn-primary">报告单（带corpId,医院首页)</a>
+
+  <a href="yuantuhuiyi://huiyi.app/reportInspectDetail?paramId=6122600158&corpId=279&type=0" class="ui-btn-lg ui-btn-primary">检验报告单详情</a>
+  <a href="yuantuhuiyi://huiyi.app/reportPacsDetail?paramId=1451839&corpId=261&type=1" class="ui-btn-lg ui-btn-primary">影像报告单详情</a>
+
+  <a href="yuantuhuiyi://huiyi.app/queuing?corpId=261" class="ui-btn-lg ui-btn-primary">排队叫号</a>
+  <a href="yuantuhuiyi://huiyi.app/navigation?corpId=261" class="ui-btn-lg ui-btn-primary">医院导航</a>
+  <a href="yuantuhuiyi://huiyi.app/bill?unionId=29" class="ui-btn-lg ui-btn-primary">账单</a>
+  <a href="yuantuhuiyi://huiyi.app/billDetail?corpId=261&id=133657" class="ui-btn-lg ui-btn-primary">账单详情</a>
+  <a href="yuantuhuiyi://huiyi.app/healthRecord?corpId=261&unionId=29" class="ui-btn-lg ui-btn-primary">健康档案</a>
+  <a href="yuantuhuiyi://huiyi.app/healthyDetail?id=12&sourceId=4321" class="ui-btn-lg ui-btn-primary">健康档案明细</a>
+
+  <a href="yuantuhuiyi://huiyi.app/blackList" class="ui-btn-lg ui-btn-primary">黑名单列表</a>
+  <a href="yuantuhuiyi://huiyi.app/record" class="ui-btn-lg ui-btn-primary">就诊记录</a>
+
+  <a onClick="callCar()" class="ui-btn-lg ui-btn-primary">滴滴打车</a>
+</div>
+
+
+
+<script type="text/javascript">
+  /**
+   yuantuhuiyi://huiyi.app/home//主页
+   yuantuhuiyi://huiyi.app/news//资讯
+   yuantuhuiyi://huiyi.app/message//消息
+   yuantuhuiyi://huiyi.app/mine//我的
+   yuantuhuiyi://huiyi.app/scanner//扫码
+   yuantuhuiyi://huiyi.app/hosp?corpId={corpId}//医院主页
+   yuantuhuiyi://huiyi.app/webview?url={url} 打开webveiw显示网页
+
+   */
+  //
+
+  // alert(2)
+  //PageModule
+
+  define("addPageEvent", function (require, exports, module) {
+
+    // var md5 = require("libs/md5");
+    var PageModule = require("component/PageModule");
+
+    var page = PageModule.render({
+
+      init: function () {
+
+        this.initPageEvent();
+
+      },
+      //页面装备完成
+      onPageReady: function (event) {
+        // alert("onPageReady");
+        this.util.alert("onPageReady")
+      },
+      //页面被激活
+      onActivation: function (event) {
+        // alert("onActivation");
+        this.util.alert("onActivation")
+      },
+      //页面被转移到后台
+      onPause: function (event) {
+        // alert("onPause");
+        this.util.alert("onPause")
+      }
+
+    });
+
+    page.init();
+
+  });
+
+
+  function addPageEvent() {
+
+    seajs.use("addPageEvent");
+
+  }
+
+  addPageEvent();
+
+
+  function callback(data, type) {
+    alert("result:" + JSON.stringify(data));
+    if (data.data && confirm("是否拷贝结果")) {
+      window.location.href = "about/feedback.html?target=_blank&text=" + (data.data);
+    }
+  }
+
+  function errorcb(data) {
+    alert(JSON.stringify(data))
+  }
+
+  function debug() {
+    //WV_Private._callMethod = WV_Private.callMethod;
+    WV_Private.callMethod = function (obj, method, params, sid) {
+
+      params = WV_Private.buildParam(params);
+
+      var uri = 'hybrid://' + obj + '-' + sid + '/' + method + '?' + params;
+
+      alert(uri)
+      if (true) {
+        // iOS下用iframe调用
+        this.setParam(sid, params);
+        this.useIframe(sid, uri);
+      } else if (isAndroid) {  //启用 代军
+        // Android下用window.prompt调用调用
+        var value = WV_PROTOCOL + ':';
+        window.prompt(uri, value);
+      }
+    }
+    alert("开启debug");
+  }
+
+  function add() {
+    lib.windvane.call("jsbrige", "add", {a: 1, b: 2}, callback, errorcb);
+  }
+
+  function backView() {
+    lib.windvane.call("jsbrige", 'backView', {}, callback, errorcb);
+  }
+
+  function backView2() {
+    lib.windvane.call("jsbrige", 'backView', {isReload: true}, callback);
+  }
+
+  function popToRootViewController() {
+    lib.windvane.call("jsbrige", 'popToRootViewController', {}, callback, errorcb);
+  }
+
+  function pushDataToParent() {
+    // alert(123)
+    lib.windvane.call("jsbrige", 'pushDataToParent', {autoBack: true, data: "123"}, callback, errorcb);
+  }
+
+  function setTitle() {
+    lib.windvane.call("jsbrige", 'setTitle', {text: "hello world"}, callback, errorcb);
+  }
+
+  function getDeviceToken() {
+    lib.windvane.call("jsbrige", 'getDeviceToken', {}, callback, errorcb);
+  }
+
+  function clearCache() {
+    lib.windvane.call("jsbrige", 'clearCache', {}, callback, errorcb);
+  }
+
+  function callPhotoUpload() {
+    lib.windvane.call("jsbrige", 'callPhotoUpload', {}, callback, errorcb);
+  }
+
+  function callPhotoUpload2() {
+    lib.windvane.call("jsbrige", 'callPhotoUpload', {crop: true}, callback, errorcb);
+  }
+
+  function skipNavigation() {
+    lib.windvane.call("jsbrige", 'skipNavigation', {Coordinate: [116.47560823, 39.98848272]}, callback);
+
+  }
+
+
+  function imageBrowser() {
+    lib.windvane.call("jsbrige", 'imageBrowser', {
+      current: "http://ww1.sinaimg.cn/large/005tUUiajw1etgpao7sydj30qo140dpx.jpg",
+      urls: [
+        "http://ww1.sinaimg.cn/large/005tUUiajw1etgpao7sydj30qo140dpx.jpg",
+        "http://ww2.sinaimg.cn/thumbnail/98719e4agw1e5j49zmf21j20c80c8mxi.jpg",
+        "http://ww2.sinaimg.cn/thumbnail/67307b53jw1epqq3bmwr6j20c80axmy5.jpg",
+        "http://ww2.sinaimg.cn/thumbnail/9ecab84ejw1emgd5nd6eaj20c80c8q4a.jpg"
+      ] // 需要预览的图片http链接列表
+    }, callback, errorcb);
+
+  }
+
+
+  function viodTest() {
+    //videoTest
+    lib.windvane.call("jsbrige", 'videoTest', {}, callback, errorcb);
+  }
+
+
+  //
+
+  var badge = "0";
+
+  function setBadge() {
+    badge = badge == "0" ? "10" : "0";
+    lib.windvane.call("jsbrige", 'setBadge', {badge: badge}, callback, errorcb);
+  }
+
+  function openViewBottom() {
+    lib.windvane.call("jsbrige", "openView", {
+      url: window.location.href,
+      animation: "bottom-in"
+    }, callback, errorcb);
+
+  }
+
+  function openViewRight() {
+    lib.windvane.call("jsbrige", 'openView', {url: window.location.href, animation: "right-in"}, callback, errorcb);
+  }
+
+
+  function errorTest() {
+    lib.windvane.call("jsbrige", 'adkjfdlakfjlakfjdlaskj', {}, callback, errorcb);
+  }
+
+  var i = 0;
+  function hasBrigeMethod() {
+    var method = ++i % 2 == 0 ? "openView" : "1232312123"
+    lib.windvane.call("jsbrige", 'hasBrigeMethod', {method: method}, callback, errorcb);
+  }
+
+  function joinVideoRoom() {
+    lib.windvane.call("jsbrige", 'joinVideoRoom', {
+      key: "c8fd086ac60c4e25b730c6369153304a",
+      room: "abc",
+      title: "网络诊间",
+      timeout: 1000 * 30,
+      jumpURL: "http://www.baidu.com",
+      caller: {name: "呼叫者", headImage: "http://image.yuantutech.com/user/e2725d04e88364af9fbfca1940a2011b-93-93.png"},//caller 呼叫的用户
+      callee: {name: "被呼叫者", headImage: "http://image.yuantutech.com/user/36e4ec7d6de0d27bf517da602cab9778-93-93.png"}
+    }, callback, errorcb)
+  }
+
+
+  function pay() {
+
+    lib.windvane.call("jsbrige", 'pay', {
+      feeChannel: 1,
+      payData: {
+        "service": "alipay.wap.create.direct.pay.by.user",//支付宝接口名
+        "partner": "2088711222690042", // 商户号
+        "seller_id": "2088711222690042", //  商户id
+        "payment_type": "1", //
+        "notify_url": "http://api.daily.yuantutech.com/user-web/restapi/common/ali/payNotify", //后端回调地址
+        "return_url": "http://api.daily.yuantutech.com/user-web/restapi/common/ali/payReturn",// 没有的，前端自己拼装
+        "out_trade_no": parseInt(Math.random() * 100000), //商户订单号  用此订单查询状态
+        "subject": "浙江远图充值", //中文字符串
+        "body": "医院充值",
+        "total_fee": "1" // 充值
+      }
+    }, callback, errorcb);
+  }
+
+  function pay2() {
+    lib.windvane.call("jsbrige", 'pay', {
+      "feeChannel": 2,
+      "payData": {
+        "mch_id": "1279981801",
+        "timeStamp": "1477387885",
+        "signType": "MD5",
+        "notify_url": "http://api.uat2.yuantutech.com/user-web/restapi/common/wx/payNotify",
+        "appid": "wxe9062380f1a04582",
+        "nonceStr": "SU1477387885",
+        "partner": "1279981801",
+        "prepayId": "wx20161025173125b60ac107e60087819294",
+        "paySign": "FCFAAC658A0A41E3528EADA4D6A35463"
+      }
+    }, callback, errorcb);
+  }
+
+  function callCar() {
+    lib.windvane.call("jsbrige", 'callCar', {
+      "corpName": '青岛开发区第一人民医院',
+      "corpAddress": '山东省青岛市黄岛区黄浦江路9号',
+      "lat": '35.963554',
+      "lon": '120.189926'
+    })
+  }
+
+
+  lib.windvane.on(function (data) {
+    alert("接收到的:" + JSON.stringify(data));
+  });
+
+
+</script>
+
+</body>
+</html>

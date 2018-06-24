@@ -1,0 +1,165 @@
+.result-ot-circle{
+    width:135px;
+    height:135px;
+    border-radius:100%;
+    text-align: center;
+    font-size:30px;
+    line-height:30px;
+    white-space:pre-wrap;
+    color:#949da4;
+    box-sizing: border-box;
+    padding:10px 15px;
+    margin:35px auto 30px;
+    display: flex;   
+    font-weight:bold;
+    align-items: center;
+    justify-content: center;
+}
+.result-ot-res{
+    height:105px;
+    box-sizing:border-box;
+    margin:0 15px;
+    border-top:1px solid #eee;
+    padding:28px 0;
+    color:#333;
+    text-align:center;
+    .result-ot-descri{
+        font-size:14px;
+    }
+    .result-ot-num{
+        font-size:35px;
+        margin-left:15px;
+        margin-right:13px;
+    }
+    .result-ot-unit{
+        font-size:13px;
+    }
+}
+.redult-ot-parameter{
+    display:flex;
+    margin-bottom:30px;
+    padding:5px 25px;
+    text-align:center;
+    justify-content: space-around;
+    .ot-parameter-per{
+        font-size:13px;
+        color:#333;
+    }
+    .ot-parameter-text{
+        font-size:12px;
+        color:#666;
+        margin-top:8px;
+    }
+    .ot-parameter{
+        display:inline-block;
+        width:8px;
+        height:8px;
+        margin-right:10px;
+        border-radius:100%;
+        
+    }
+    .color-blue{
+        background:#429fff;
+    }
+    .color-red{
+        background:#ff5256;
+    }
+    .color-green{
+        background:#95d452;
+    }
+    .color-yellow{
+        background:#ffcd00;
+    }
+}
+.result-ot-meter{
+    border-top:1px solid #eee;
+    padding:30px 0 25px;
+    height:60px;
+    text-align: center;
+    border-bottom:1px solid #eee;
+    display:-webkit-flex;
+    display:flex;
+    justify-content: space-around;
+    position:relative;
+    .ot-meter-item-op{
+        line-height:20px; 
+        font-size:14px;
+        color:#333;              
+        text-align: center;
+    }
+    .ot-meter-item-op:first-child{
+        margin-bottom:12px;
+    }
+    .ot-meter-des{
+        color:#666;
+    }
+    .ot-meter-item-font{
+        font-size:35px;
+        color:#333;
+        margin-right:5px;
+    }
+    .ot-meter-line{
+        position:absolute;
+        top:50%;
+        left:50%;
+        height:50px;
+        transform: translateX(-50%) translateY(-50%);
+        border-left:1px solid #eee;
+    }
+}
+.result-ot-des{
+    padding-top:15px;
+    line-height:40px;
+    color:#999;
+    text-align: center;
+    .result-ot-tag{
+        border-radius:5px;
+        line-height:30px;
+        display:inline-block;
+        border:1px solid #eee;
+        margin:10px 5px;
+        padding:0px 20px;
+    }
+}
+.result-ref{
+    border-bottom:1px solid #eee;
+    background:#fff;
+    line-height:50px;
+    overflow:hidden;
+    .result-a{
+        display:block;
+        color:#666;
+    }
+    .result-search{
+        float:left;
+        border:none;
+        height:50px;
+        width:50px;
+        box-sizing:border-box;
+        padding:10px;
+        position:relative;
+        img{
+            width:20px;
+            height:20px;
+            position:absolute;
+            top:15px;
+            left:15px;
+        }
+    }
+    .result-goto{
+        float:right;
+        width:10px;
+        height:10px;
+        margin-top:18px;
+        margin-right:15px;
+        border-top:1px solid #ccc;
+        border-right:1px solid #ccc;
+        transform: rotate(45deg);
+    }
+}
+.footer{
+    padding:10px 32px;
+    img{
+        width:100%;
+    }
+}

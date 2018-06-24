@@ -1,0 +1,168 @@
+.grid-top-box, .grid-bottom-box {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  color: #000;
+  .not-online {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url(//image.yuantutech.com/user/649b2cbac5aca5edb74dbd6d871374d3-172-174.png);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+  }
+  .new-online {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url(https://image.yuantutech.com/i4/81585fa87ac16e510cbf4f95c367819f-86-88.png);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+  }
+}
+.grid-top-box:active, .grid-bottom-box:active {
+  color: #000;
+  opacity: 0.8;
+}
+
+.grid-top-container {
+  background-color: #fff;
+  &:after {
+    content: "";
+    display: block;
+    width: 0;
+    clear: both;
+  }
+}
+.grid-top-box {
+  float: left;
+  border-bottom: 1px solid #eee;
+  width: 50%;
+  height: 85px;
+  box-sizing: border-box;
+  padding: 20px 15px;
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 1px;
+    height: 30px;
+    background: #eee;
+    position: absolute;
+    top: 50%;
+    right: -1px;
+    transform: translateY(-50%);
+  }
+}
+.grid-top-box:nth-last-of-type(1) {
+
+}
+@media screen and (max-width: 350px) {
+  .grid-top-box {
+    padding: 20px 10px;
+  }
+}
+
+
+.grid-container {
+  overflow: hidden;
+  background-color: red;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  z-index: 1;
+}
+.grid-container-title {
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.grid-container-value {
+  font-size: 12px;
+  color: #999;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.grid-top-box-word {
+  margin-right: 30px;
+}
+
+.grid-top-logo {
+  float: right;
+  width: 40px;
+  height: 40px;
+  & > img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .grid-top-logo {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.grid-bottom-container {
+  background-color: #fff;
+  //border-bottom: 1px solid #ddd;
+  margin-top: -1px;
+  &:after {
+    content: "";
+    display: block;
+    width: 0;
+    clear: both;
+  }
+}
+
+.grid-bottom-box {
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+  width: 25%;
+  height: 80px;
+  padding: 18px 5px;
+  float: left;
+  margin-bottom: -1px;
+  & > p {
+    margin-top: 5px;
+    font-size: 13px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.grid-bottom-logo {
+  margin: auto;
+  width: 28px;
+  height: 28px;
+  & > img {
+    width: 100%;
+  }
+}
+
+.index-top-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(200, 200, 200, 0);
+  z-index: 999;
+  padding: 10px 0;
+}
+.search-top-bar {
+  width: 76%;
+  margin: 0 auto;
+  padding-left: 30px;
+  border-radius: 20px;
+  background: #fff no-repeat url('https://front-images.oss-cn-hangzhou.aliyuncs.com/i4/1e7a4f4c9d7aaa61a24c57184572e887-26-28.png');
+  background-size: 14px;
+  background-position-y: center;
+  background-position-x: 10px;
+  font-size: 14px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.5);
+}

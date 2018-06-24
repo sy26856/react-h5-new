@@ -1,0 +1,218 @@
+.report-detail-29 {
+  width: 100%;
+  height: 100%;
+  font-family: PingFangSC;
+  /*检查报告单样式*/
+  >.check-report {
+    .header {
+      background-size: cover;
+      display: flex;
+      padding: 20px 18px;
+      color: #333;
+      font-size: 14px;
+      border-bottom: 1px solid #d8d8d8;
+      .topLogo {
+        vertical-align: -webkit-baseline-middle;
+        text-align: center;
+        margin-right: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 72px;
+          height: 64px;
+        }
+      }
+      h1 {
+        margin-bottom: 5px;
+        font-size: 16px;
+      }
+      p {
+        margin-bottom: 5px;
+      }
+    }
+    .tag-tips,.result-tips {
+      padding: 10px;
+      font-size: 13px;
+      color: #666;
+    }
+    .result-tips {
+      color: #333;
+    }
+    .high-icon {
+      color: #ff5256;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    .low-icon {
+      color: #95d452;
+      margin-left: 5px;
+    }
+    .report-item-container {
+      background-color: #fff;
+      width: 100%;
+      -webkit-overflow-scrolling: touch;
+    }
+    .report-items {
+      text-align: center;
+      width: 100%;
+      color: #333;
+      font-size: 13px;
+      .item {
+       padding: 14px 0;
+        font-size: 13px;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        td {
+          flex: 1;
+          word-break: break-all;
+        }
+      }
+      .head {
+        background-color: #429fff;
+        color: #fff;
+      }
+      .isFixe {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+      }
+      .isStaic {
+        position: static;
+      }
+    }
+    .image-report {
+      .image-report-info-block {
+        margin: 10px 0;
+      }
+    }
+    .report-info-panel {
+      background-color: #fff;
+      padding: 10px 15px;
+    }
+    .report-info-item {
+      display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+      display: -moz-box; /* 老版本语法: Firefox (buggy) */
+      display: -ms-flexbox; /* 混合版本语法: IE 10 */
+      display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+      display: flex;
+      -webkit-box-align: center;
+      -moz-align-items: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }  
+    .report-info-item:first-of-type {
+      .report-info-item-time {
+        padding-top: 0;
+      }
+      .report-info-item-main {
+        padding-top: 0;
+      }
+    }
+    .report-info-item-time {
+      width: 50px;
+      font-size: 12px;
+      color: #999;
+      position: relative;
+      left: 1px;
+      div {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+    .report-info-item-main {
+      position: relative;
+      box-sizing: border-box;
+      padding-left: 10px;
+      flex: 1;
+      font-size: 12px;
+    }
+    .status-item-title {
+      color: #333;
+      font-size: 13px;
+    }
+    .status-item-main {
+      color: #999;
+    }
+    .report-info-panel-on {
+      text-align: center;
+      img {
+        width: 10px;
+      }
+    }
+    .report-info-panel-off {
+      text-align: center;
+      img {
+        width: 10px;
+        -webkit-transform: rotateZ(180deg);
+        -moz-transform: rotateZ(180deg);
+        -ms-transform: rotateZ(180deg);
+        -o-transform: rotateZ(180deg);
+        transform: rotateZ(180deg);
+      }
+    }
+    .status-item-icon {
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .annexContent {
+      width: 100%;
+      background-color: #fff;
+      padding: 0 15px;
+      box-sizing: border-box;
+      padding-bottom: 53px;
+      h2 {
+        font-size: 14px;
+        color:rgb(51,51,51);
+        line-height: 40px;
+      }
+      .picList {
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        img {
+          width:107px;
+          height: 107px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .inspectTypeName{
+      overflow : hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  }
+  /*影响报告单样式*/
+  >.image-report {
+    .image-header {
+      background-image: url(//front-images.oss-cn-hangzhou.aliyuncs.com/i4/30917bb183d9f2cc65504bd6799e27f7-750-168.png);
+      background-size: cover;
+      padding: 15px 15px 15px 30px;
+      color: #fff;
+      font-size: 16px;
+      /* text-align: center; */
+      h1 {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 5px;
+      }
+      p {
+        font-size: 13px;
+        margin-bottom: 5px;
+      }
+    }
+    .image-report-info-block{
+      margin: 10px 0;
+    }
+  }
+}

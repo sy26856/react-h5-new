@@ -1,0 +1,142 @@
+.page-add-patient{
+  padding-bottom:70px;
+}
+.page-add-patient .ui-list li{
+
+  display:block;
+}
+
+.page-add-patient .delete-link{
+  text-align: center;
+  display: block;
+}
+
+.icon-ation-info {
+  display: inline-block;
+  background-image: url(//image.yuantutech.com/user/ab3d86555e44ca453c368c47516dac78-60-60.png);
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: -5px;
+}
+.confirm-title {
+  padding: 10px 15px;
+  background-color: #fff;
+  color: #777;
+}
+.confirm-tips {
+  margin-top: 10px;
+  ul {
+    font-size: 14px;
+    color: #333;
+    margin: 0 15px;
+  }
+}
+.checkbox-name{
+  color: #777;
+}
+.ui-footer{
+  position: fixed;
+  bottom: 0;
+  height: 56px;
+  background-color: #f8f8f8;
+}
+.page-add-patient{
+  padding-top: 20px;
+}
+#J_idNo input,#guarderIdNo{
+  text-transform: uppercase;
+}
+.notice-top {
+  margin-top: 10px;
+}
+.patient-notice-msg {
+  color: #444;
+  & > p {
+    margin-bottom: 5px;
+  }
+}
+
+.add-patient-label {
+  padding: 0 15px 15px 15px;
+  color: #666;
+}
+.select-patient-type {
+  background-color: #fff;
+  padding: 15px 10px;
+}
+.select-patient-type:after {
+  content: "";
+  display: block;
+  clear: both;
+  width: 0;
+}
+.select-patient-item {
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #999;
+  width: 136px;
+  font-size: 12px;
+  box-sizing: border-box;
+  padding: 8px 0 8px 8px;
+  img {
+    float: left;
+    width: 34px;
+    height: 34px;
+  }
+}
+.patient-select-icon {
+  background: url(https://front-images.oss-cn-hangzhou.aliyuncs.com/i4/8d59e17dc7f5fbea5f4c5daccff6bcea-56-56.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28px;
+  height: 28px;
+}
+.id-toggle {
+  position: absolute;
+  right: 14px;
+  padding: 16px 10px;
+  width: 20px;
+}
+.card-loading {
+  padding: 15px;
+  line-height: 16px;
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+  span {
+    margin-top: -2px;
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(https://front-images.oss-cn-hangzhou.aliyuncs.com/i4/936c6bc9ef79a7381692d5ca31661457-64-64.png) no-repeat;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    -webkit-animation: card-loading 1s linear infinite;
+    -o-animation: card-loading 1s linear infinite;
+    animation: card-loading 1s linear infinite;
+  }
+}
+
+@keyframes card-loading {
+  from {
+    -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);}
+  to {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}

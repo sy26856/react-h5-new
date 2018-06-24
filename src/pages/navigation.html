@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <!--#include file="/mods/head/index.html"  data='{"spmb":"3001"}' -->
+    <title>导航</title>
+    <link rel="stylesheet" href="//cache.amap.com/lbs/static/main1119.css"/>
+    <link rel="stylesheet" type="text/css" href="../component/frozen.less.css" />
+    <style>
+        .ui-btn-wrap{
+            position: fixed;
+            padding-bottom: 5px;
+            bottom: 15px;
+            z-index: 2;
+        }
+    </style>
+
+    <script>
+    window.location.href = window.location.href.replace('/pages', '')
+    </script>
+    <script src="//s.yuantutech.com/tms/fb/h5-corp-locations.php"></script>
+    <script type="text/javascript" src="//webapi.amap.com/maps?v=1.3&key=4e2c53026430fd477565c86ce48e6877&plugin=AMap.Geocoder"></script>
+</head>
+<body>
+<div id="container"></div>
+<div class="ui-btn-wrap ui-flex ui-flex-pack-center">
+    <button class="ui-btn-lg hide" id="J_MapBtn">
+        使用地图导航
+    </button>
+</div>
+<div class="ui-notice hide" id="J_NoData">
+    <i></i>
+    <p>没有录入地理信息</p>
+</div>
+
+<!--#include file="/mods/head/footer.html"-->
+
+<script type="text/javascript">
+    seajs.use("pages/navigation", function(page){
+        seajs.use("libs/fastclick");
+    });
+</script>
+</body>
+</html>                     
